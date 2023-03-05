@@ -40,6 +40,17 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
+@font-face {
+  font-family: "Poppins-ExtraBold";
+  src: url(/assets/fonts/Poppins-ExtraBold.ttf) format("truetype");
+  font-weight: bold;
+}
+.poppins-bold {
+  font-family: "Poppins-ExtraBold";
+}
+.border-circle {
+  border-radius: 1000px;
+}
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -86,13 +97,15 @@ h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  height: 72px;
+  height: 85px;
   transition: all 0.5s;
   z-index: 997;
   transition: all 0.5s;
   background: transparent;
 }
-
+#header .container {
+  height: 60px;
+}
 #header.header-scrolled {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
@@ -103,8 +116,11 @@ h6 {
   align-items: center;
   margin-inline-end: auto;
 }
-
-#header .logo h1 {
+#header .logo svg {
+  width: 87px;
+  height: 60px;
+}
+/* #header .logo h1 {
   font-size: 28px;
   margin: 0;
   line-height: 0;
@@ -117,7 +133,7 @@ h6 {
 #header .logo h1 a:hover {
   color: #576971;
   text-decoration: none;
-}
+} */
 
 #header .logo img {
   padding: 0;
@@ -139,7 +155,7 @@ h6 {
 }
 
 .header-social-links a {
-  color: #7b909a;
+  color: #fff;
   display: inline-block;
   line-height: 0px;
   transition: 0.3s;
@@ -180,7 +196,7 @@ h6 {
   padding: 10px 0 10px 30px;
   font-size: 15px;
   font-family: "Poppins", sans-serif;
-  color: #7b909a;
+  color: #fff;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -196,7 +212,8 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover > a {
-  color: #009cea;
+  color: #fff;
+  font-weight: bold;
 }
 
 .navbar .dropdown ul {
@@ -425,11 +442,11 @@ h6 {
   width: 70%;
 }
 
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
   }
-}
+} */
 
 @media (max-width: 992px) {
   #hero h1 {

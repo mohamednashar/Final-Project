@@ -97,7 +97,7 @@ h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  height: 85px;
+  height: 80px;
   transition: all 0.5s;
   z-index: 997;
   transition: all 0.5s;
@@ -117,8 +117,8 @@ h6 {
   margin-inline-end: auto;
 }
 #header .logo svg {
-  width: 87px;
-  height: 60px;
+  width: 100px;
+  /* height: 60px; */
 }
 /* #header .logo h1 {
   font-size: 28px;
@@ -399,7 +399,7 @@ h6 {
   background-size: cover;
   background-position: right top;
   /* margin-top: 70px; */
-  padding: 100px 0;
+  padding: 120px 0;
 }
 
 #hero h1 {

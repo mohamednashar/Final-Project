@@ -255,38 +255,38 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <form action="">
-            <label class="req">What's your name in English?</label>
+          <form >
+            <label class="required">What's your name in English?</label>
             <br>
-            <input type="text">
+            <input value="" id="in1" type="text">
             <br>
-            <label>What's your name in Arabic?</label>
+            <label class="required">What's your name in Arabic?</label>
             <br>
-            <input type="text">
+            <input id="in2" type="text">
             <br>
-            <label>What's the main email that you always open?</label>
+            <label class="required">What's the main email that you always open?</label>
             <br>
-            <input type="text">
+            <input id="in3" type="text">
             <br>
-            <label>What's your WhatsApp number?</label>
+            <label class="required">What's your WhatsApp number?</label>
             <br>
-            <input type="text" name="" id="">
+            <input id="in4" type="text" name="" id="">
             <br>
             <label>Write a summary you wish to display in the website.</label>
             <br>
             <input type="text">
             <br>
-            <label>Where are you located?</label>
+            <label class="required">Where are you located?</label>
             <br>
-            <input type="text">
+            <input id="in5" type="text">
             <br>
-            <label>How old are you?</label>
+            <label class="required">How old are you?</label>
             <br>
-            <input type="text">
+            <input id="in6" type="text">
             <br>
-            <label>What's Your Gender?</label>
+            <label class="required">What's Your Gender?</label>
             <br>
-            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="male" checked> Male
             <input type="radio" name="gender" value="female"> Female
             <br>
 
@@ -302,7 +302,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button data-bs-target="#exampleModal-2" data-bs-toggle="modal" type="button"
+          <button id="next_1" data-bs-target="#exampleModal-2" data-bs-toggle="modal" type="button"
             class="btn btn-primary">Next</button>
         </div>
       </div>
@@ -318,7 +318,7 @@
         </div>
         <div class="modal-body">
           <form action="">
-            <label>How would you describe your job title? </label>
+            <label class="required">How would you describe your job title? </label>
             <div class="multi-selector">
 
               <div class="select-field">
@@ -329,28 +329,28 @@
               <div class="list">
 
                 <label for="task1" class="task">
-                  <input type="checkbox" name="" id="task1">
+                  <input type="checkbox" name="" id="check1">
                   Individual Contributor - Self Employed
 
                 </label>
                 <label for="task2" class="task">
-                  <input type="checkbox" name="" id="task2">
+                  <input type="checkbox" name="" id="check2">
                   Middle Manager
                 </label>
                 <label for="task3" class="task">
-                  <input type="checkbox" name="" id="task3">
+                  <input type="checkbox" name="" id="check3">
                   Senior Manager
                 </label>
                 <label for="task4" class="task">
-                  <input type="checkbox" name="" id="task4">
+                  <input type="checkbox" name="" id="check4">
                   Director/VP
                 </label>
                 <label for="task4" class="task">
-                  <input type="checkbox" name="" id="task4">
+                  <input type="checkbox" name="" id="check5">
                   C-suite/Executive
                 </label>
                 <label for="task4" class="task">
-                  <input type="checkbox" name="" id="task4">
+                  <input type="checkbox" name="" id="check6">
                   Founder/Business Owner
                 </label>
 
@@ -359,26 +359,22 @@
 
             </div>
 
-            <label>What's the name of your college/university?</label>
+            <label  class="required">What's the name of your college/university?</label>
             <br>
-            <input type="text">
+            <input id="in7" type="text">
             <br>
-            <label>What is your Degree?</label>
+            <label class="required">Field of study</label>
             <br>
-            <input type="text">
+            <input id="in8" type="text">
             <br>
 
-            <label>Field Of Study</label>
+            <label  class="required">Graduation year</label>
             <br>
-            <input type="text">
-            <br>
-            <label>Graduation year</label>
-            <br>
-            <input type="text">
+            <input id="in9" type="text">
             <br>
 
 
-            <label>What is your Degree?</label>
+            <label class="required">What is your Degree?</label>
 
             <div class="multi-selector">
 
@@ -390,7 +386,7 @@
               <div class="list-2">
 
                 <label for="task1" class="task">
-                  <input type="radio" name="z" value="Bachelor"> Bachelor
+                  <input type="radio" name="z" value="Bachelor" checked> Bachelor
                 </label>
                 <label for="task2" class="task">
                   <input type="radio" name="z" value="Master"> Master
@@ -414,7 +410,7 @@
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
             data-bs-target="#exampleModal-1">Back</button>
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+          <button id="next_2" type="button" class="btn btn-primary" data-bs-toggle="modal"
             data-bs-target="#exampleModal-3">Next</button>
         </div>
       </div>
@@ -430,11 +426,11 @@
         </div>
         <div class="modal-body">
           <form action="">
-            <label>Do you have work experience or not</label>
+            <label class="required">Do you have work experience or not</label>
             <br>
-            <textarea name="" id="" cols="25" style="height: 35px;"></textarea>
+            <textarea name="" id="in10" cols="25" style="height: 35px;"></textarea>
 
-            <label>What is the industry you can give coaching in?</label>
+            <label class="required">What is the industry you can give coaching in?</label>
 
             <div class="multi-selector">
 
@@ -446,39 +442,39 @@
               <div class="list-3">
 
                 <label for="task1" class="task">
-                  <input type="checkbox" name="" id="task1">
+                  <input type="checkbox" name="" id="check7">
                   Sales & Marketing
                 </label>
                 <label for="task2" class="task">
-                  <input type="checkbox" name="" id="task2">
+                  <input type="checkbox" name="" id="check8">
                   Business Management
                 </label>
                 <label for="task3" class="task">
-                  <input type="checkbox" name="" id="task3">
+                  <input type="checkbox" name="" id="check9">
                   Soft Skills
                 </label>
                 <label for="task4" class="task">
-                  <input type="checkbox" name="" id="task4">
+                  <input type="checkbox" name="" id="check10">
                   HR
                 </label>
                 <label for="task4" class="task">
-                  <input type="checkbox" name="" id="task4">
+                  <input type="checkbox" name="" id="check11">
                   Finance
                 </label>
                 <label for="task4" class="task">
-                  <input type="checkbox" name="" id="task4">
+                  <input type="checkbox" name="" id="check12">
                   Other
                 </label>
               </div>
             </div>
 
-            <label >What's your Profile LinkedIn link?</label>
+            <label class="required" >What's your Profile LinkedIn link?</label>
             <br>
-            <input type="text">
+            <input id="in11" type="text">
             <br>
-            <label >Add your profile picture as a link.</label>
+            <label class="required" >Add your profile picture as a link.</label>
             <br>
-            <input type="text">
+            <input id="in12" type="text">
             <br>
             <label >Add your CV link, if you have.</label>
             <br>
@@ -492,9 +488,9 @@
             <br>
             <input type="text">
             <br>
-            <label >What's your hourly rate for an hour coach session?</label>
+            <label class="required" >What's your hourly rate for an hour coach session?</label>
             <br>
-            <input type="text">
+            <input id="in13" type="text">
             <br>
             
 
@@ -510,7 +506,7 @@
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
             data-bs-target="#exampleModal-2">Back</button>
-          <button data-bs-toggle="modal" data-bs-target="#exampleModal-4" type="button" class="btn btn-primary">Next</button>
+          <button id="next_3" data-bs-toggle="modal" data-bs-target="#exampleModal-4" type="button" class="btn btn-primary">Next</button>
         </div>
       </div>
     </div>
@@ -525,7 +521,7 @@
         </div>
         <div class="modal-body">
           <form action="">
-            <label>Please add your bank account details or wallet details</label>
+            <label class="required">Please add your bank account details or wallet details</label>
             <p>For Example: Bank Name: CIB | Commercial International bank of Egypt
               Beneficiary Name: Ibrahim Anwar Mohamed Elsoufi Mahmoud Elashiri 
               Beneficiary address: 13 st mosa mizar, Elfawal, Fayoum, Egypt
@@ -536,22 +532,10 @@
               IBAN: EG200010011900000100035645197
               Or
               Vodafone cash: 01026623085</p>
-            <textarea name="" id="" cols="20" style="height: 100px;"></textarea>
+            <textarea id="text_area" cols="20" style="height: 100px;"></textarea>
             <label>Please add your calendly.com link as we will send it to the clients after they pay</label>
             <input type="text" name="" id="">
             <br>
-         
-
-            
-            
-
-            
-            
-
-
-
-
-
 
           </form>
 
@@ -560,7 +544,7 @@
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
             data-bs-target="#exampleModal-3">Back</button>
-          <button data-bs-toggle="modal" data-bs-target="#exampleModal-5" type="button" class="btn btn-primary">Next</button>
+          <button id="next_4" data-bs-toggle="modal" data-bs-target="#exampleModal-5" type="button" class="btn btn-primary">Next</button>
             
         </div>
       </div>
@@ -577,7 +561,7 @@
         <div class="modal-body">
           <form action="">
             
-            <label for="">English Language skills</label>
+            <label class="required">English Language skills</label>
 
             <div class="multi-selector">
 
@@ -589,7 +573,7 @@
               <div class="list-4">
 
                 <label for="task1" class="task">
-                  <input type="radio" name="z" value="Native"> Native
+                  <input type="radio" name="z" value="Native" checked> Native
                 </label>
                 <label for="task2" class="task">
                   <input type="radio" name="z" value="Master"> Fluent
@@ -606,7 +590,7 @@
 
             </div>
 
-            <label for="">Are you available/free for at least 2:3 hours every week?</label>
+            <label class="required">Are you available/free for at least 2:3 hours every week?</label>
             
             <div class="multi-selector">
 
@@ -618,16 +602,13 @@
               <div class="list-5">
 
                 <label for="task1" class="task">
-                  <input type="radio" name="z" value="Native"> Native
+                  <input type="radio" name="z" value="Native" checked> Yes
                 </label>
                 <label for="task2" class="task">
-                  <input type="radio" name="z" value="Master"> Fluent
+                  <input type="radio" name="z" value="Master"> No
                 </label>
                 <label for="task3" class="task">
-                  <input type="radio" name="z" value="Intermediate"> Intermediate
-                </label>
-                <label for="task4" class="task">
-                  <input type="radio" name="z" value="Beginner"> Beginner
+                  <input type="radio" name="z" value="Intermediate"> Maybe
                 </label>
 
               </div>
@@ -716,7 +697,7 @@
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
             data-bs-target="#exampleModal-4">Back</button>
-          <button data-bs-toggle="modal" data-bs-target="#exampleModal-5" type="button" class="btn btn-primary">Submit</button>
+          <button id="submit" data-bs-toggle="modal" data-bs-target="#exampleModal-5" type="button" class="btn btn-primary">Submit</button>
             
         </div>
       </div>

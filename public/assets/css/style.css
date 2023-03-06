@@ -295,7 +295,7 @@ h6 {
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: #364146;
+  color: #fff;
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -441,6 +441,7 @@ h6 {
   display: inline-block;
   padding: 12px 28px;
   /* border-radius: 3px; */
+  border: 0;
   transition: 0.5s;
   color: #fff;
   background: #009cea;
@@ -1048,7 +1049,9 @@ section {
   padding: 60px 0;
   position: relative;
 }
-
+#coaches-content {
+  justify-content: center;
+}
 .team::before {
   content: "";
   position: absolute;
@@ -1056,7 +1059,8 @@ section {
   right: 0;
   top: 0;
   bottom: 0;
-  background: rgba(255, 255, 255, 0.75);
+  /* background: rgba(255, 255, 255, 0.75); */
+  background-color: #001d3d;
   z-index: 9;
 }
 
@@ -1064,29 +1068,40 @@ section {
   position: relative;
   z-index: 10;
 }
-
+.team .member-card {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 30%;
+  height: 100%;
+}
 .team .member {
   text-align: center;
   margin-bottom: 80px;
-  position: relative;
+  /* background-color: #fff; */
+  border-radius: 10px;
 }
 
 .team .member .pic {
   overflow: hidden;
 }
-
+.team .member .pic img {
+  border-radius: 10px;
+}
 .team .member .member-info {
   background: #fff;
-  padding: 20px 5px;
+  padding: 28px 5px;
   color: #364146;
-  box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+  /* box-shadow: 0px 2px 15px rgb(0 0 0 / 10%); */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   max-height: 450px;
-  height: 375px;
+  height: 220px;
   width: 90%;
   margin: 0 auto;
-  margin-top: -50px;
+  margin-top: -60px;
   position: relative;
   z-index: 20;
+  border-radius: 10px;
 }
 
 .team .member .member-info .details li {
@@ -1249,11 +1264,12 @@ section {
 
 .pricing .btn-buy,
 .coaches .btn-buy {
-  background: #009cea;
+  background: transparent;
+  border: 1px solid #009cea;
   display: inline-block;
   padding: 8px 30px;
-  border-radius: 4px;
-  color: #fff;
+  /* border-radius: 4px; */
+  color: #009cea;
   font-size: 13px;
   font-family: "Raleway", sans-serif;
   font-weight: 600;
@@ -1721,57 +1737,58 @@ section {
   color: #364146;
 }
 
-
-.multi-selector{
+.multi-selector {
   width: max-content;
 
 }
-.select-field{
+.select-field {
   border: 1px solid rgb(187, 187, 187);
 
 }
-.select-field,.task,.list{
+.select-field,
+.task,
+.list {
   width: 100%;
   background-color: white;
   padding: 0.3rem;
 
 }
-.list{
-  box-shadow: 0 30px 60px rgb(0,0,0,0.2);
+.list {
+  box-shadow: 0 30px 60px rgb(0, 0, 0, 0.2);
   display: none;
 
 }
-.list-2{
-  box-shadow: 0 30px 60px rgb(0,0,0,0.2);
+.list-2 {
+  box-shadow: 0 30px 60px rgb(0, 0, 0, 0.2);
   display: none;
  
 }
-.list-3{
-  box-shadow: 0 30px 60px rgb(0,0,0,0.2);
+.list-3 {
+  box-shadow: 0 30px 60px rgb(0, 0, 0, 0.2);
   display: none;
 
 }
-.list-4{
-  box-shadow: 0 30px 60px rgb(0,0,0,0.2);
+.list-4 {
+  box-shadow: 0 30px 60px rgb(0, 0, 0, 0.2);
   display: none;
  
 }
-.list-5{
-  box-shadow: 0 30px 60px rgb(0,0,0,0.2);
+.list-5 {
+  box-shadow: 0 30px 60px rgb(0, 0, 0, 0.2);
   display: none;
 
 }
-.list-6{
-  box-shadow: 0 30px 60px rgb(0,0,0,0.2);
+.list-6 {
+  box-shadow: 0 30px 60px rgb(0, 0, 0, 0.2);
   display: none;
 
 }
-.list-7{
-  box-shadow: 0 30px 60px rgb(0,0,0,0.2);
+.list-7 {
+  box-shadow: 0 30px 60px rgb(0, 0, 0, 0.2);
   display: none;
   
 }
-.down-arrow{
+.down-arrow {
   font-size: 1.2rem;
   display: inline-block;
   cursor: pointer;
@@ -1794,7 +1811,7 @@ section {
   
 
 }
-.rotate180{
+.rotate180 {
   transform: rotate(-60deg);
 }
 

@@ -45,17 +45,16 @@ async function getData() {
       // console.log(coaches);
       coaches.map((coach) => {
         html += `
-				<div class="col-lg-4 col-md-6">
+				<div class="col-lg-4 col-md-6 member-card">
 					<div class="member" data-aos="zoom-in">
-						<div class="pic"><img src="${coach.image}" class="img-fluid" alt="Coach Image"></div>
+						<div class="pic col-lg-11 m-auto pt-4" style="height: 380px;"><img src="${coach.image}" class="img-fluid" alt="Coach Image"></div>
 							<div class="member-info coaches pricing">
 								<div class='ps-3 pe-3'>
 									<h5>${coach.name}</h5>
 									<h4>${coach.jobTitle}</h4>
 								</div>
 								<span>${coach.pricing}</span>
-				
-								<a href="${coach.paymentLink}" target="_blank" class="btn-buy mt-2">Book Now</a>
+								<a href="${coach.paymentLink}" target="_blank" class="btn-buy border-circle mt-3">Book Now</a>
 							</div>
 						</div>
 					</div>

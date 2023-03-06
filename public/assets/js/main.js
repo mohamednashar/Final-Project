@@ -313,7 +313,7 @@ $(document).ready(function () {
     $(document).scroll(function () {
       scroll_start = $(this).scrollTop();
       if (scroll_start > offset.top) {
-        $("#header").css("background-color", "#fff");
+        $("#header").css("background-color", "#444444");
         $("#header").style = "background";
       } else {
         $("#header").css("background-color", "transparent");

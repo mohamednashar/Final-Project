@@ -301,6 +301,7 @@ document.querySelector('.select-field-7').addEventListener('click', () => {
   document.querySelector('.list-7').classList.toggle('show');
   document.querySelector('.down-arrow').classList.toggle('rotate180');
 
+<<<<<<< Updated upstream
 $(document).ready(function () {
   var scroll_start = 0;
   var startchange = $("#hero");
@@ -316,6 +317,8 @@ $(document).ready(function () {
       }
     });
   }
+=======
+>>>>>>> Stashed changes
 });
 
 var next_1 = document.getElementById("next_1");

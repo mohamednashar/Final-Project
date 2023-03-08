@@ -1205,7 +1205,7 @@ section {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   max-height: 450px;
   height: 220px;
-  width: 100%;
+  width: 96%;
   margin: 0 auto;
   margin-top: -60px;
   position: relative;
@@ -1312,6 +1312,17 @@ section {
 .pricing {
   background-color: #001d3d;
 }
+.pricing h2 {
+  color: #fafbfb;
+  font-size: 50px;
+  font-weight: bold;
+}
+.pricing p {
+  color: #fafbfb;
+}
+.pricing a {
+  font-size: 20px;
+}
 .pricing .box {
   padding: 20px;
   background: #fff;
@@ -1320,9 +1331,18 @@ section {
   position: relative;
   overflow: hidden;
   border: 2px solid #e9ecee;
+  transition: all 0.5s;
+}
+.pricing .box:hover {
+  box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 35%);
+  /* transform: scaleY(1.05); */
+  margin-top: -10px;
+  background-color: #009cea;
+  border-color: #009cea;
 }
 
-.pricing h3 {
+.pricing h3,
+.pricing .featured h3 {
   font-weight: 400;
   padding: 20px 15px;
   font-size: 18px;
@@ -1330,14 +1350,17 @@ section {
   color: #777777;
 }
 
-.pricing h4 {
+.pricing h4,
+.pricing .featured h4 {
   font-size: 36px;
   color: #009cea;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
   margin-bottom: 20px;
 }
-
+.pricing .box:hover .pricing h4 {
+  color: #fafbfb;
+}
 .pricing h4 sup {
   font-size: 20px;
   top: -15px;
@@ -1399,19 +1422,18 @@ section {
   font-weight: 500;
 }
 
-.pricing .featured {
+/* .pricing .featured {
   background: #009cea;
   border-color: #009cea;
-}
+} */
 
-.pricing .featured h3,
-.pricing .featured h4,
 .pricing .featured h4 span,
-.pricing .featured ul,
 .pricing .featured ul .na {
   color: #fff;
 }
-
+.pricing .featured ul {
+  color: #000;
+}
 .pricing .featured .btn-buy {
   background: #fff;
   color: #009cea;

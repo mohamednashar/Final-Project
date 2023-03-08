@@ -194,14 +194,7 @@ function showNewCoaches(coaches) {
 							<h4>${coach.jobTitle}</h4>
 						</div>
 						<span>${coach.pricing}</span>
-						<p class='detail-item mb-1 mt-1'>Details</p>
-						<span>${coach.category}</span>
-						<span>${coach.summary}</span>
-						<span>${coach.country}/${coach.city} - ${coach.rating} stars</span>
-						<div class="social">
-							<a href="${coach.SM_account}" target="_blank"><i class="bi bi-linkedin"></i></a>
-						</div>
-						<a href="${coach.paymentLink}" target="_blank" class="btn-buy mt-2">Buy Now</a>
+						<a href="${coach.paymentLink}" target="_blank" class="btn-buy border-circle mt-2">Buy Now</a>
 					</div>
 				</div>
 			</div>

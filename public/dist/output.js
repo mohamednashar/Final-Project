@@ -1,4 +1,4 @@
-/******/ () => {
+/******/ (() => {
   // webpackBootstrap
   /******/ "use strict";
   /******/ var __webpack_modules__ = {
@@ -13807,7 +13807,7 @@
   /************************************************************************/
   var __webpack_exports__ = {};
   // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
-  () => {
+  (() => {
     /*!****************************!*\
   !*** ./assets/js/index.js ***!
   \****************************/
@@ -13911,6 +13911,7 @@
     // 	<a href="${coach.SM_account}" target="_blank"><i class="bi bi-linkedin"></i></a>
     // </div>
 
+    /* Hiding Filtered Boxes with select box */
     const inputFields = document.querySelectorAll(".input-field");
 
     // if click outside
@@ -14030,7 +14031,7 @@
 							<h4>${coach.jobTitle}</h4>
 						</div>
 						<span>${coach.pricing}</span>
-						<a href="${coach.paymentLink}" target="_blank" class="btn-buy mt-2">Buy Now</a>
+						<a href="${coach.paymentLink}" target="_blank" class="btn-buy border-circle mt-2">Buy Now</a>
 					</div>
 				</div>
 			</div>
@@ -14051,7 +14052,7 @@
         }
       }
     }
-  };
+  })();
 
   /******/
-};
+})();

@@ -1310,7 +1310,7 @@ section {
 # Pricing
 --------------------------------------------------------------*/
 .pricing {
-  background: #001d3d;
+  background-color: #001d3d;
 }
 .pricing .box {
   padding: 20px;

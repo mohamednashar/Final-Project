@@ -505,6 +505,12 @@ section {
 .section-title p {
   margin-bottom: 0;
 }
+/*--------------------------------------------------------------
+# Coaches
+--------------------------------------------------------------*/
+#coaches {
+  color: #edf2fb;
+}
 
 /*--------------------------------------------------------------
 # About
@@ -1046,8 +1052,20 @@ section {
 .team {
   background: url("../img/team-bg.jpg") center center no-repeat;
   background-size: cover;
-  padding: 60px 0;
+  padding: 85px 0;
   position: relative;
+}
+.team h2 {
+  color: #000;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  font-size: 50px;
+}
+.team .together {
+  color: #000;
+}
+.team .browse {
+  font-size: 20px;
 }
 #coaches-content {
   justify-content: center;
@@ -1060,7 +1078,7 @@ section {
   top: 0;
   bottom: 0;
   /* background: rgba(255, 255, 255, 0.75); */
-  background-color: #001d3d;
+  background-color: #edf2fb;
   z-index: 9;
 }
 
@@ -1087,23 +1105,28 @@ section {
 }
 .team .member .pic img {
   border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .team .member .member-info {
   background: #fff;
   padding: 28px 5px;
-  color: #364146;
+  /* color: #364146; */
+  color: #fff;
   /* box-shadow: 0px 2px 15px rgb(0 0 0 / 10%); */
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   max-height: 450px;
   height: 220px;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   margin-top: -60px;
   position: relative;
   z-index: 20;
   border-radius: 10px;
 }
-
+.team .member .member-info h5 {
+  color: #009cea;
+  font-family: "Poppins", sans-serif;
+}
 .team .member .member-info .details li {
   font-size: 12px;
 }
@@ -1112,9 +1135,10 @@ section {
   font-weight: 700;
   margin-bottom: 10px;
   font-size: 16px;
-  color: #364146;
+  font-family: "Poppins", sans-serif;
+  color: #111;
   position: relative;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
 }
 
 .team .member h4::after {
@@ -1132,6 +1156,7 @@ section {
   font-style: italic;
   display: block;
   font-size: 13px;
+  font-family: "Poppins", sans-serif;
 }
 
 .team .member .social {
@@ -1264,7 +1289,7 @@ section {
 
 .pricing .btn-buy,
 .coaches .btn-buy {
-  background: transparent;
+  background: #fff;
   border: 1px solid #009cea;
   display: inline-block;
   padding: 8px 30px;
@@ -1739,11 +1764,9 @@ section {
 
 .multi-selector {
   width: max-content;
-
 }
 .select-field {
   border: 1px solid rgb(187, 187, 187);
-
 }
 .select-field,
 .task,
@@ -1751,42 +1774,34 @@ section {
   width: 100%;
   background-color: white;
   padding: 0.3rem;
-
 }
 .list {
   box-shadow: 0 30px 60px rgb(0, 0, 0, 0.2);
   display: none;
-
 }
 .list-2 {
   box-shadow: 0 30px 60px rgb(0, 0, 0, 0.2);
   display: none;
- 
 }
 .list-3 {
   box-shadow: 0 30px 60px rgb(0, 0, 0, 0.2);
   display: none;
-
 }
 .list-4 {
   box-shadow: 0 30px 60px rgb(0, 0, 0, 0.2);
   display: none;
- 
 }
 .list-5 {
   box-shadow: 0 30px 60px rgb(0, 0, 0, 0.2);
   display: none;
-
 }
 .list-6 {
   box-shadow: 0 30px 60px rgb(0, 0, 0, 0.2);
   display: none;
-
 }
 .list-7 {
   box-shadow: 0 30px 60px rgb(0, 0, 0, 0.2);
   display: none;
-  
 }
 .down-arrow {
   font-size: 1.2rem;
@@ -1794,33 +1809,27 @@ section {
   cursor: pointer;
   transition: 0.2s linear;
 }
-.task{
-  
+.task {
   display: block;
   padding-left: 0;
-
 }
 
-.task:hover{
+.task:hover {
   background-color: aliceblue;
-
 }
-.show{
-  
+.show {
   display: block;
-  
-
 }
 .rotate180 {
   transform: rotate(-60deg);
 }
 
-.required::after{
+.required::after {
   content: " *";
   color: red;
   font-size: 17px;
 }
 
-input:focus{
+input:focus {
   outline: none;
 }

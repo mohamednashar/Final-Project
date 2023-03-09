@@ -48,12 +48,14 @@
 
 
   <script>
-    const apiKey = "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";
+    const apiKey = "";
+    // "this kye worked now --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";
+   // "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";
     const model = "text-davinci-003";
     const temperature = 0;
     const maxTokens = 4060;
     function getResponse(input) {
-      var cvInput = "Review the CV" + document.getElementById("cv-input").value;
+      var cvInput = "I need a recommendation and how to enhance this resume to get a job and please the recruiter /n/n" + document.getElementById("cv-input").value;
       var careerInput = "Create a career path planand mention how to start, time to reach the goal, books, certificates & courses that can help for" + document.getElementById("career-input").value;
       var xhr = new XMLHttpRequest();
       xhr.open("POST", "https://api.openai.com/v1/completions");
@@ -106,7 +108,7 @@
           formattedText += ending;
           document.getElementById("modal-body").innerHTML = formattedText;
           if (input == 2) {
-            document.getElementById("modal-title").innerHTML = "The CV Reviwe";
+            document.getElementById("modal-title").innerHTML = "The CV Recommendations";
           }
           $("#responseModal").modal("show");
         }
@@ -842,8 +844,9 @@
     <!-- CV Review -->
     <section>
       <!-- Button CV modal -->
-      <div class=" justify-content-center"
+      <div class="text-center justify-content-center"
         data-aos="fade-up">
+        <p>Add your Cv and we get recommendations to improve it  </p>
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cvModal"
           data-backdrop="static" data-keyboard="false">
           Review your CV

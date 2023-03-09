@@ -39,7 +39,7 @@ async function getData() {
       if (coachesContent.classList.contains("top-coaches")) {
         // coaches = coaches.slice(0, topCoachesCount)
         coaches = coaches.filter((coach) => {
-          return coach.order <= 2;
+          return coach.order <= 3;
         });
       }
       // console.log(coaches);

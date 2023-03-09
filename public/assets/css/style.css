@@ -1204,13 +1204,16 @@ section {
   /* box-shadow: 0px 2px 15px rgb(0 0 0 / 10%); */
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   max-height: 450px;
-  height: 220px;
+  height: 255px;
   width: 96%;
   margin: 0 auto;
   margin-top: -60px;
   position: relative;
   z-index: 20;
   border-radius: 10px;
+}
+.team .member .member-info span {
+  color: #333;
 }
 .team .member .member-info h5 {
   color: #009cea;
@@ -1307,11 +1310,29 @@ section {
 }
 
 /*--------------------------------------------------------------
+# CV Reviews
+--------------------------------------------------------------*/
+.cv {
+  height: 600px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url(/assets/img/image-2.jpg);
+  background-size: cover;
+  /* position: absolute; */
+  /* top: 50%; */
+  /* left: 50%; */
+  /* transform: translate(-50%, 0%); */
+  /* z-index: -1; */
+}
+.cv .review {
+  border: 1px solid #008bd1;
+  background-color: #008bd1;
+  color: #fff;
+}
+/*--------------------------------------------------------------
 # Pricing
 --------------------------------------------------------------*/
-.pricing {
-  background-color: #001d3d;
-}
+
 .pricing h2 {
   color: #fafbfb;
   font-size: 50px;
@@ -1327,7 +1348,7 @@ section {
   padding: 20px;
   background: #fff;
   text-align: center;
-  border-radius: 4px;
+  border-radius: 10px;
   position: relative;
   overflow: hidden;
   border: 2px solid #e9ecee;
@@ -1358,8 +1379,8 @@ section {
   font-family: "Poppins", sans-serif;
   margin-bottom: 20px;
 }
-.pricing .box:hover .pricing h4 {
-  color: #fafbfb;
+.pricing .box:hover .pricing h4 sup {
+  color: #fff !important;
 }
 .pricing h4 sup {
   font-size: 20px;

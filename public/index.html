@@ -232,7 +232,7 @@
 
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li class="dropdown"><a href="#"><span>About</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown drop-about"><a href="#"><span>About</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a class="nav-link scrollto" href="#about">About Us</a></li>
               <li><a class="nav-link scrollto" href="#services">Services</a></li>
@@ -247,8 +247,8 @@
             instructor</a></li>
         <li class="dropdown"><a href="#"><span>Languages</span> <i class="bi bi-chevron-down"></i></a>
           <ul class="user-lang">
-            <li><a href="index.html" class="nav-link scrollto">English</a></li>
-            <li><a href="index-ar.html" dir="rtl" class="nav-link scrollto">عربي</a></li>
+            <li><a href="index.html" class="nav-link scrollto lang">English</a></li>
+            <li><a href="index-ar.html" dir="rtl" class="nav-link scrollto lang">عربي</a></li>
         </li>
         </ul>
         </li>
@@ -310,13 +310,6 @@
             <input type="radio" name="gender" value="male"> Male
             <input type="radio" name="gender" value="female"> Female
             <br>
-
-
-
-
-
-
-
           </form>
 
 
@@ -380,10 +373,7 @@
                   <br><br>
                   <textarea id="Other" cols="15" rows="1"></textarea>
                 </label>
-
               </div>
-
-
             </div>
 
             <label class="required">What's the name of your college/university?</label>
@@ -515,13 +505,6 @@
             <br>
             <input id="in14" type="text">
             <br>
-
-
-
-
-
-
-
           </form>
 
 
@@ -562,8 +545,6 @@
             <br>
 
           </form>
-
-
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
@@ -705,12 +686,6 @@
               <div class="list-6">
 
               </div>
-
-
-
-
-
-
             </div>
 
             <label for="">How did you hear about us?</label>
@@ -838,44 +813,48 @@
               </div> -->
 
         </div>
+      </div>
     </section>
     <!-- End Team Section -->
 
     <!-- CV Review -->
-    <section>
-      <!-- Button CV modal -->
-      <div class="text-center justify-content-center" data-aos="fade-up">
-        <p>Add your Cv and we get recommendations to improve it </p>
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cvModal" data-backdrop="static"
-          data-keyboard="false">
-          Review your CV
-        </button>
-        <div id="response2">
+    <section class="cv position-relative">
+      <!-- <img src="assets/img/image-2.jpg" alt="cv client" class="position-absolute" height="130%"> -->
+      <div class="contianer">
+        <!-- Button CV modal -->
+        <div class="text-center col-lg-5 col-md-5 col-sm-3" data-aos="fade-up">
+          <p>Add your Cv and we get recommendations to improve it </p>
+          <button type="button" class="btn review col-lg-3 border-circle" data-toggle="modal" data-target="#cvModal"
+            data-backdrop="static" data-keyboard="false">
+            Review your CV
+          </button>
+          <div id="response2">
+          </div>
         </div>
-      </div>
-      <!-- Modal -->
-      <div class="modal fade" id="cvModal" tabindex="-1" role="dialog" aria-labelledby="cvModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="cvModalLabel">Review Your CV</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <div class="container">
-                <div class="form-group">
-                  <textarea class="form-control" rows="5" id="cv-input" placeholder="Add your cv"></textarea>
+        <!-- Modal -->
+        <div class="modal fade" id="cvModal" tabindex="-1" role="dialog" aria-labelledby="cvModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="cvModalLabel">Review Your CV</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="container">
+                  <div class="form-group">
+                    <textarea class="form-control" rows="5" id="cv-input" placeholder="Add your cv"></textarea>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" onclick="getResponse(2)" class="btn btn-primary" data-dismiss="modal">Review your CV
-                in 30 sec
-                by</button>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" onclick="getResponse(2)" class="btn border-circle" data-dismiss="modal">Review
+                  your
+                  CV in 30 sec by</button>
+              </div>
             </div>
           </div>
         </div>
@@ -1469,12 +1448,16 @@
 
   <!-- Output of fetching data from database -->
   <script src="dist/output.js"></script>
-
+  <!-- Firebase coaches form code  -->
+  <script type="module" src="assets/js/firebase.js"></script>
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-  <script type="module" src="assets/js/firebase.js"></script>
+  <<<<<<< HEAD <script type="module" src="assets/js/firebase.js">
+    </script>
 
 
+    =======
+    >>>>>>> 6c4a4fe (new commit)
 
 
 </body>

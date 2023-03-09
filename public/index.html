@@ -50,7 +50,7 @@
   <script>
     const apiKey = "";
     // "this kye worked now --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";
-   // "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";
+    // "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";
     const model = "text-davinci-003";
     const temperature = 0;
     const maxTokens = 4060;
@@ -350,35 +350,35 @@
               <div class="list">
 
                 <label for="task1" class="task">
-                  <input type="checkbox" name="checkk" id="check1" value="Yes">
+                  <input type="checkbox" id="check1" value="Yes">
                   Individual Contributor - Self Employed
 
                 </label>
                 <label for="task2" class="task">
-                  <input type="checkbox" name="checkk" id="check2" value="Yes">
+                  <input type="checkbox" id="check2" value="Yes">
                   Middle Manager
                 </label>
                 <label for="task3" class="task">
-                  <input type="checkbox" name="checkk" id="check3" value="Yes">
+                  <input type="checkbox" id="check3" value="Yes">
                   Senior Manager
                 </label>
                 <label for="task4" class="task">
-                  <input type="checkbox" name="checkk" id="check4" value="Yes">
+                  <input type="checkbox" id="check4" value="Yes">
                   Director/VP
                 </label>
                 <label for="task4" class="task">
-                  <input type="checkbox" name="checkk" id="check5" value="Yes">
+                  <input type="checkbox" id="check5" value="Yes">
                   C-suite/Executive
                 </label>
                 <label for="task4" class="task">
-                  <input type="checkbox" name="checkk" id="check6" value="Yes">
+                  <input type="checkbox" id="check6" value="Yes">
                   Founder/Business Owner
                 </label>
                 <label for="task4" class="task">
-                  <input type="checkbox" name="checkk" id="check7" value="Yes">
+                  <input type="checkbox" id="check7" value="Yes">
                   Other
                   <br><br>
-                  <textarea id="Other" name="checkk" cols="15" rows="1"></textarea>
+                  <textarea id="Other" cols="15" rows="1"></textarea>
                 </label>
 
               </div>
@@ -458,7 +458,7 @@
 
               <div class="select-field-3">
                 <input type="text" name="" placeholder="Choose tasks" id="" class="input-selector">
-                <span class="down-arrow-3">&blacktriangledown;</span>
+                <span class="down-arrow">&blacktriangledown;</span>
               </div>
 
               <div class="list-3">
@@ -627,7 +627,7 @@
               <div class="list-5">
 
                 <label for="task1" class="task">
-                  <input type="radio" name="available" value="Yes" checked> Yes
+                  <input type="radio" name="available" value="Yes"> Yes
                 </label>
                 <label for="task2" class="task">
                   <input type="radio" name="available" value="No"> No
@@ -844,11 +844,10 @@
     <!-- CV Review -->
     <section>
       <!-- Button CV modal -->
-      <div class="text-center justify-content-center"
-        data-aos="fade-up">
-        <p>Add your Cv and we get recommendations to improve it  </p>
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cvModal"
-          data-backdrop="static" data-keyboard="false">
+      <div class="text-center justify-content-center" data-aos="fade-up">
+        <p>Add your Cv and we get recommendations to improve it </p>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cvModal" data-backdrop="static"
+          data-keyboard="false">
           Review your CV
         </button>
         <div id="response2">
@@ -1474,6 +1473,8 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
   <script type="module" src="assets/js/firebase.js"></script>
+
+
 
 
 </body>

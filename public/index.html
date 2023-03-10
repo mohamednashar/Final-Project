@@ -41,6 +41,7 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/form-elements.css">
   <!-- =======================================================
   * Template Name: Scaffold - v4.10.0
   * Template URL: https://bootstrapmade.com/scaffold-bootstrap-metro-style-template/
@@ -271,66 +272,66 @@
   <!-- ======= Modal ======= -->
 
   <div class="modal fade" id="exampleModal-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+
     <div class="modal-dialog">
       <div class="modal-content">
-        <div class="modal-header">
+        <div class="modal-header flex-column align-items-start">
           <h5 class="modal-title" id="exampleModalLabel">What Career Can I Coach?</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <form>
-            <div class="required-field-block">
-              <label class="required my-3 mr-2">What's your name in English?</label>
-              <input value="" id="in1" type="text" class="border-circle border-blue col-10">
+          <form class="registration-form">
+            <div class="form-group">
+              <input value="" id="in1" type="text" class="border-circle border-blue col-10" placeholder="Enter Your Name In English">
             </div>
 
-            <div class="required-field-block">
-              <label class="required my-3 mr-2">What's your name in Arabic?</label>
-              <input id="in2" type="text" class="border-circle border-blue col-10">
+            <div class="form-group">
+              <input id="in2" type="text" class="border-circle border-blue col-10" placeholder="Enter Your Name In Arabic">
             </div>
 
-            <div class="required-field-block">
-              <label class="required my-3 mr-2">What's the main email that you always open?</label>
-              <input id="in3" type="text" class="border-circle border-blue col-10">
+            <div class="form-group">
+              <input id="in3" type="text" class="border-circle border-blue col-10" placeholder="Enter Your Email">
             </div>
 
-            <div class="required-field-block">
-              <label class="required my-3 mr-2">What's your WhatsApp number?</label>
-              <input id="in4" type="text" name="" id="" class="border-circle border-blue col-10">
+            <div class="form-group">
+              <input id="in4" type="text" name="" id="" class="border-circle border-blue col-10" placeholder="Enter Your WhatsApp Number">
             </div>
 
-            <div class="required-field-block">
-              <label class="required my-3 mr-2">Write a summary you wish to display in the website.</label>
-              <input id="in5" type="text" class="border-circle border-blue col-10">
+            <div class="form-group">
+              <textarea name="form-about-yourself" placeholder="About yourself" class="form-about-yourself form-control" 
+                id="in5"></textarea>
             </div>
 
-            <div class="required-field-block">
-              <label class="required my-3 mr-2">Where are you located?</label>
-              <input id="in6" type="text" class="border-circle border-blue col-10">
+            <div class="form-group">
+              <input id="in6" type="text" class="border-circle border-blue col-10" placeholder="Where are you located?">
             </div>
 
-            <div class="required-field-block">
-              <label class="required my-3 mr-2">How old are you?</label>
-              <input id="in7" type="text" class="border-circle border-blue col-10">
+            <div class="form-group">
+
+              <input id="in7" type="number" placeholder="How old are you?" min="0">
             </div>
+            
             <label class="required my-3 mr-2">What's Your Gender?</label>
 
             <input type="radio" name="gender" value="male"> Male
             <input type="radio" name="gender" value="female"> Female
             <br>
+            <button id="next_1" data-bs-target="#exampleModal-2" data-bs-toggle="modal" type="button"
+            class="btn btn-primary">Next</button>
           </form>
 
 
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button id="next_1" data-bs-target="#exampleModal-2" data-bs-toggle="modal" type="button"
-            class="btn btn-primary">Next</button>
-        </div>
+        
       </div>
     </div>
-  </div>
+  </div>  
 
+
+
+  
+  
   <div class="modal fade" id="exampleModal-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -341,46 +342,25 @@
         <div class="modal-body">
           <form action="">
             <label class="required">How would you describe your job title? </label>
-            <div class="multi-selector">
-
-              <div class="select-field">
-                <input type="text" name="" placeholder="Choose tasks" id="" class="input-selector">
-                <span class="down-arrow">&blacktriangledown;</span>
-              </div>
-              <!---------List of checkboxes and options----------->
-              <div class="list">
-
-                <label for="task1" class="task">
-                  <input type="checkbox" id="check1" value="Yes">
-                  Individual Contributor - Self Employed
-
-                </label>
-                <label for="task2" class="task">
-                  <input type="checkbox" id="check2" value="Yes">
-                  Middle Manager
-                </label>
-                <label for="task3" class="task">
-                  <input type="checkbox" id="check3" value="Yes">
-                  Senior Manager
-                </label>
-                <label for="task4" class="task">
-                  <input type="checkbox" id="check4" value="Yes">
-                  Director/VP
-                </label>
-                <label for="task4" class="task">
-                  <input type="checkbox" id="check5" value="Yes">
-                  C-suite/Executive
-                </label>
-                <label for="task4" class="task">
-                  <input type="checkbox" id="check6" value="Yes">
-                  Founder/Business Owner
-                </label>
-                <label for="task4" class="task">
-                  <input type="checkbox" id="check7" value="Yes">
-                  Other
-                  <br><br>
-                  <textarea id="Other" cols="15" rows="1"></textarea>
-                </label>
+            <div class="form-group col-sm-8">
+              <div id="myMultiselect" class="multiselect">
+                <div id="mySelectLabel" class="selectBox" onclick="toggleCheckboxArea()">
+                  <select class="form-select">
+                    <option>somevalue</option>
+                  </select>
+                  <div class="overSelect"></div>
+                </div>
+                <div id="mySelectOptions">
+                  <label><input type="checkbox" id="check1" onchange="checkboxStatusChange()" value="Individual Contributor" name="jobTitle" /> Individual Contributor</label>
+                  <label><input type="checkbox" id="check2" onchange="checkboxStatusChange()" value=" Middle Manager" name="jobTitle" /> Middle Manager</label>
+                  <label><input type="checkbox" id="check3" onchange="checkboxStatusChange()" value="Senior Manager" name="jobTitle" /> Senior Manager</label>
+                  <label><input type="checkbox" id="check4" onchange="checkboxStatusChange()" value="Director/VP" name="jobTitle" /> Director/VP</label>
+                  <label><input type="checkbox" id="check5" onchange="checkboxStatusChange()" value="C-suite/Executive" name="jobTitle" /> C-suite/Executive</label>
+                  <label><input type="checkbox" id="check6" onchange="checkboxStatusChange()" value="Founder/Business Owner" name="jobTitle" /> Founder/Business Owner</label>
+                  <label><input type="checkbox" id="check7" onchange="checkboxStatusChange()" value="Other" name="jobTitle" /> Other</label>
+     
+              
+                </div>
               </div>
             </div>
 
@@ -401,30 +381,15 @@
 
             <label class="required">What is your Degree?</label>
 
-            <div class="multi-selector">
-
-              <div class="select-field-2">
-                <input type="text" name="" placeholder="Choose tasks" id="" class="input-selector">
-                <span class="down-arrow">&blacktriangledown;</span>
-              </div>
-              <!---------List of checkboxes and options----------->
-              <div class="list-2">
-
-                <label for="task1" class="task">
-                  <input type="radio" name="z" value="Bachelor" checked> Bachelor
-                </label>
-                <label for="task2" class="task">
-                  <input type="radio" name="z" value="Master"> Master
-                </label>
-                <label for="task3" class="task">
-                  <input type="radio" name="z" value="Doctorate"> Doctorate
-                </label>
-                <label for="task4" class="task">
-                  <input type="radio" name="z" value="Other"> Other
-                </label>
-
-              </div>
+            <div class="form-group col-sm-8">
+              <select id="degr" class="form-select">
+                <option value="Bachelor" selected>Bachelor</option>
+                <option value="Master">Master</option>
+                <option value="Doctorate">Doctorate</option>
+                <option value="Other">Other</option>
+              </select>
             </div>
+
           </form>
         </div>
         <div class="modal-footer">
@@ -452,42 +417,27 @@
 
             <label class="required">What is the industry you can give coaching in?</label>
 
-            <div class="multi-selector">
-
-              <div class="select-field-3">
-                <input type="text" name="" placeholder="Choose tasks" id="" class="input-selector">
-                <span class="down-arrow">&blacktriangledown;</span>
-              </div>
-
-              <div class="list-3">
-
-                <label for="task1" class="task">
-                  <input type="checkbox" name="" id="check7" value="Yes">
-                  Sales & Marketing
-                </label>
-                <label for="task2" class="task">
-                  <input type="checkbox" name="" id="check8" value="Yes">
-                  Business Management
-                </label>
-                <label for="task3" class="task">
-                  <input type="checkbox" name="" id="check9" value="Yes">
-                  Soft Skills
-                </label>
-                <label for="task4" class="task">
-                  <input type="checkbox" name="" id="check10" value="Yes">
-                  HR
-                </label>
-                <label for="task4" class="task">
-                  <input type="checkbox" name="" id="check11" value="Yes">
-                  Finance
-                </label>
-                <label for="task4" class="task">
-                  <input type="checkbox" name="" id="check12" value="Yes">
-                  Other <br>
-                  <textarea name="" id="Other2" cols="15" rows="1"></textarea>
-                </label>
+            <div class="form-group col-sm-8">
+              <div id="myMultiselect2" class="multiselect">
+                <div id="mySelectLabel2" class="selectBox" onclick="toggleCheckboxArea2()">
+                  <select class="form-select">
+                    <option>somevalue</option>
+                  </select>
+                  <div class="overSelect"></div>
+                </div>
+                <div id="mySelectOptions2">
+                  <label ><input type="checkbox" id="check7" onchange="checkboxStatusChange()" value="Sales & Marketing" />Sales & Marketing</label>
+                  <label ><input type="checkbox" id="check8" onchange="checkboxStatusChange()" value="Business Management" /> Business Management</label>
+                  <label ><input type="checkbox" id="check9" onchange="checkboxStatusChange()" value="Soft Skills" /> Soft Skills</label>
+                  <label ><input type="checkbox" id="check10" onchange="checkboxStatusChange()" value="HR" /> HR</label>
+                  <label ><input type="checkbox" id="check11" onchange="checkboxStatusChange()" value="Finance" /> Finance</label>
+                  <label ><input type="checkbox" id="check12" onchange="checkboxStatusChange()" value="Other" /> Other</label>
+                 
+                </div>
               </div>
             </div>
+
+               
 
             <label class="required">What's your Profile LinkedIn link?</label>
             <br>
@@ -577,150 +527,51 @@
 
             <label class="required">English Language skills</label>
 
-            <div class="multi-selector">
-
-              <div class="select-field-4">
-                <input type="text" name="" placeholder="Choose tasks" id="" class="input-selector">
-                <span class="down-arrow">&blacktriangledown;</span>
-              </div>
-
-              <div class="list-4">
-
-                <label for="task1" class="task">
-                  <input type="radio" name="english" value="Native"> Native
-                </label>
-                <label for="task2" class="task">
-                  <input type="radio" name="english" value="Fluent"> Fluent
-                </label>
-                <label for="task3" class="task">
-                  <input type="radio" name="english" value="Intermediate"> Intermediate
-                </label>
-                <label for="task4" class="task">
-                  <input type="radio" name="english" value="Beginner"> Beginner
-                </label>
-
-              </div>
-
-
+            <div class="form-group col-sm-8">
+              <select id="englishSkills" class="form-select">
+                <option value="Native" selected>Native</option>
+                <option value="Fluent">Fluent</option>
+                <option value="Intermediate">Intermediate</option>
+                <option value="Beginner">Beginner</option>
+              </select>
             </div>
 
             <label class="required">Are you available/free for at least 2:3 hours every week?</label>
 
-            <div class="multi-selector">
-
-              <div class="select-field-5">
-                <input type="text" name="" placeholder="Choose tasks" id="" class="input-selector">
-                <span class="down-arrow">&blacktriangledown;</span>
-              </div>
-
-              <div class="list-5">
-
-                <label for="task1" class="task">
-                  <input type="radio" name="available" value="Yes"> Yes
-                </label>
-                <label for="task2" class="task">
-                  <input type="radio" name="available" value="No"> No
-                </label>
-                <label for="task3" class="task">
-                  <input type="radio" name="available" value="Maybe"> Maybe
-                </label>
-
-              </div>
-
-
+            <div class="form-group col-sm-8">
+              <select id="availability" class="form-select">
+                <option value="Yes" selected>Yes</option>
+                <option value="No">No</option>
+                <option value="Maybe">Maybe</option>
+              </select>
             </div>
 
             <label for="">Tell us about your experience in programming.</label>
 
-            <div class="multi-selector">
-
-              <div class="select-field-6">
-                <input type="text" name="" placeholder="Choose tasks" id="" class="input-selector">
-                <span class="down-arrow">&blacktriangledown;</span>
-              </div>
-
-              <div class="list-6">
-
-                <label for="task1" class="task">
-                  <input type="radio" name="programming" value="Excellent"> Excellent
-                </label>
-                <label for="task2" class="task">
-                  <input type="radio" name="programming" value="Very good"> Very Good
-                </label>
-                <label for="task3" class="task">
-                  <input type="radio" name="programming" value="Good"> Good
-                </label>
-                <label for="task4" class="task">
-                  <input type="radio" name="programming" value="Fair"> Fair
-                </label>
-                <label for="task4" class="task">
-                  <input type="radio" name="programming" value="Poor"> Poor
-                </label>
-                <label for="task4" class="task">
-                  <input type="radio" name="programming" value="Nothing"> Nothing
-                </label>
-
-              </div>
-
-
+            <div class="form-group col-sm-8">
+              <select id="programming" class="form-select">
+                <option value="Excellent" selected>Excellent</option>
+                <option value="Very Good">Very Good</option>
+                <option value="Good">Good</option>
+                <option value="Fair">Fair</option>
+                <option value="Poor">Poor</option>
+                <option value="Nothing">Nothing</option>
+              </select>
             </div>
 
             <label for="">How did you hear about us?</label>
 
-            <div class="multi-selector">
-
-              <div class="select-field-7">
-                <input type="text" name="" placeholder="Choose tasks" id="" class="input-selector">
-                <span class="down-arrow">&blacktriangledown;</span>
-              </div>
-
-              <div class="list-7">
-
-                <label for="task1" class="task">
-                  <input type="radio" name="us" value="Google"> Google
-                </label>
-                <label for="task2" class="task">
-                  <input type="radio" name="us" value="Facebook"> Facebook
-                </label>
-                <label for="task3" class="task">
-                  <input type="radio" name="us" value="LinkedIn"> LinkedIn
-                </label>
-                <label for="task4" class="task">
-                  <input type="radio" name="us" value="Other"> Other
-                </label>
-
-              </div>
-
-              <div class="list-6">
-
-              </div>
+            <div class="form-group col-sm-8">
+              <select id="aboutus" class="form-select">
+                <option value="Google" selected>Google</option>
+                <option value="Facebook">Facebook</option>
+                <option value="LinkedIn">LinkedIn</option>
+                <option value="Other">Other</option>
+            
+              </select>
             </div>
 
-            <label for="">How did you hear about us?</label>
-
-            <div class="multi-selector">
-
-              <div class="select-field-7">
-                <input type="text" name="" placeholder="Choose tasks" id="" class="input-selector">
-                <span class="down-arrow">&blacktriangledown;</span>
-              </div>
-
-              <div class="list-7">
-
-                <label for="task1" class="task">
-                  <input type="radio" name="z" value="Google"> Google
-                </label>
-                <label for="task2" class="task">
-                  <input type="radio" name="z" value="Facebook"> Facebook
-                </label>
-                <label for="task3" class="task">
-                  <input type="radio" name="z" value="LinkedIn"> LinkedIn
-                </label>
-                <label for="task4" class="task">
-                  <input type="radio" name="z" value="Other"> Other
-                </label>
-              </div>
-            </div>
+            
           </form>
         </div>
         <div class="modal-footer">
@@ -1464,6 +1315,7 @@
   <script src="assets/js/main.js"></script>
   <script type="module" src="assets/js/firebase.js"></script>
   <script src="assets/js/multi.js"></script>
+
 
 
 

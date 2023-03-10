@@ -54,25 +54,22 @@ var in11 = document.getElementById("in11");
 var in12 = document.getElementById("in12");
 var in13 = document.getElementById("in13");
 var in14 = document.getElementById("in14");
-var check1 = document.getElementById("check1").checked ? document.getElementById("check1").value : '';
-var check2 = document.getElementById("check2").checked ? document.getElementById("check2").value : '';
-var check3 = document.getElementById("check3").checked ? document.getElementById("check3").value : '';
-var check4 = document.getElementById("check4").checked ? document.getElementById("check4").value : '';
-var check5 = document.getElementById("check5").checked ? document.getElementById("check5").value : '';
-var check6 = document.getElementById("check6").checked ? document.getElementById("check6").value : '';
-var check7 = document.getElementById("check7").checked ? document.getElementById("check7").value : '';
-var check8 = document.getElementById("check8").checked ? document.getElementById("check8").value : '';
-var check9 = document.getElementById("check9").checked ? document.getElementById("check9").value : '';
-var check10 = document.getElementById("check10").checked ? document.getElementById("check10").value : '';
-var check11 = document.getElementById("check11").checked ? document.getElementById("check11").value : '';
-var Other = document.getElementById("Other");
-var Other2 = document.getElementById("Other2");
+var degr = document.getElementById("degr");
 var next_1 = document.getElementById("next_1");
 var next_2 = document.getElementById("next_2");
 var next_3 = document.getElementById("next_3");
+var next_4 = document.getElementById("next_3");
+var submit = document.getElementById("submit");
 var not1 = document.getElementById("not1");
-var not1 = document.getElementById("not2");
-var not1 = document.getElementById("not3");
+var not2 = document.getElementById("not2");
+var not3 = document.getElementById("not3");
+var text_area = document.getElementById("text_area");
+var englishSkills = document.getElementById("englishSkills");
+var programming = document.getElementById("programming");
+var availability = document.getElementById("availability");
+var aboutus = document.getElementById("aboutus");
+
+
 
 
 
@@ -97,21 +94,25 @@ async function Add() {
 
 }
 async function Add2() {
+    var jobTitle = document.querySelectorAll('input[name="jobTitle"]:checked');
+
+    let values = [];
+    for (var i = 0; i < jobTitle.length; i++) 
+    {
+        values.push(jobTitle[i].value);
+      }
+
     var ref = collection(db, "Second Page");
     const docRef = await addDoc(
         ref, {
-        IndividualContributor: check1,
-        MiddleManager: check2,
-        SeniorManager: check3,
-        DirectorVP: check4,
-        CSuite: check5,
-        Founder: check6,
-        Other: Other.value,
+        JobTitle: values,
         CollegeName: in8.value,
         StudyField: in9.value,
-        GraduationYear: in10.value
+        GraduationYear: in10.value,
+        degree: degr.value
     }
     )
+
 }
 
 async function Add3() {
@@ -125,7 +126,6 @@ async function Add3() {
         CVLink: not1.value,
         Life: not2.value,
         RoleModel: not3.value,
-        Other: Other2.value,
         SalesMarketing: check7,
         BusinessManagement: check8,
         SoftSkills: check9,
@@ -133,11 +133,32 @@ async function Add3() {
         Finance: check11,
     }
     )
-
 }
 
+async function Add4() {
+    var ref = collection(db, "Fourth Page");
+    const docRef = await addDoc(
+        ref, {
+        Bank: text_area.value
+    }
+    )
+}
+
+async function Add5() {
+    var ref = collection(db, "Fifth Page");
+    const docRef = await addDoc(
+        ref, {
+        EnglishSkills: englishSkills.value,
+        Programming: programming.value,
+        Availability: availability.value,
+        Us: aboutus.value
+    }
+    )
+}
 
 
 next_1.addEventListener('click', Add);
 next_2.addEventListener('click', Add2);
 next_3.addEventListener('click', Add3);
+next_4.addEventListener('click', Add4);
+submit.addEventListener('click', Add5);

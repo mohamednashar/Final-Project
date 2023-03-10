@@ -268,40 +268,6 @@
   });
 })();
 
-document.querySelector(".select-field").addEventListener("click", () => {
-  document.querySelector(".list").classList.toggle("show");
-  document.querySelector(".down-arrow").classList.toggle("rotate180");
-});
-
-document.querySelector(".select-field-2").addEventListener("click", () => {
-  document.querySelector(".list-2").classList.toggle("show");
-  document.querySelector(".down-arrow").classList.toggle("rotate180");
-});
-
-document.querySelector(".select-field-3").addEventListener("click", () => {
-  document.querySelector(".list-3").classList.toggle("show");
-  document.querySelector(".down-arrow").classList.toggle("rotate180");
-});
-
-document.querySelector(".select-field-4").addEventListener("click", () => {
-  document.querySelector(".list-4").classList.toggle("show");
-  document.querySelector(".down-arrow").classList.toggle("rotate180");
-});
-
-document.querySelector(".select-field-5").addEventListener("click", () => {
-  document.querySelector(".list-5").classList.toggle("show");
-  document.querySelector(".down-arrow").classList.toggle("rotate180");
-});
-
-document.querySelector(".select-field-6").addEventListener("click", () => {
-  document.querySelector(".list-6").classList.toggle("show");
-  document.querySelector(".down-arrow").classList.toggle("rotate180");
-});
-
-document.querySelector(".select-field-7").addEventListener("click", () => {
-  document.querySelector(".list-7").classList.toggle("show");
-  document.querySelector(".down-arrow").classList.toggle("rotate180");
-});
 
 var next_1 = document.getElementById("next_1");
 var next_2 = document.getElementById("next_2");
@@ -400,8 +366,7 @@ var flg2 = 0;
       check9.checked ||
       check10.checked ||
       check11.checked ||
-      check12.checked ||
-      check13.checked
+      check12.checked 
     ) {
       flg2 = 1;
     } else {
@@ -459,7 +424,7 @@ $(document).ready(function () {
         $("#header .lang").css("color", "#009cea");
         $("#header").css("background-color", "#fff");
         $("#header a").css("color", "#000");
-     
+
       } else {
         $("#header").css("background-color", "transparent");
         $("#header a").css("color", "#fff");
@@ -469,3 +434,5 @@ $(document).ready(function () {
     });
   }
 });
+
+

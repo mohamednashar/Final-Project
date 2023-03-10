@@ -1179,7 +1179,7 @@ section {
   position: relative;
   top: 0px;
   left: 0px;
-  width: 30%;
+  /* width: 30%; */
   height: 100%;
 }
 .team .member {
@@ -1318,28 +1318,45 @@ section {
   background-repeat: no-repeat;
   background-image: url(/assets/img/image-2.jpg);
   background-size: cover;
-  /* position: absolute; */
-  /* top: 50%; */
-  /* left: 50%; */
-  /* transform: translate(-50%, 0%); */
-  /* z-index: -1; */
 }
 .cv .review {
   border: 1px solid #008bd1;
   background-color: #008bd1;
   color: #fff;
+  transition: 0.5s ease-in;
 }
+.cv .review:hover {
+  background: #009cea;
+}
+
+@media screen and (max-width: 768px) {
+  .cv .details h4 {
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+  }
+}
+@media (min-width: 1024px) {
+  .cv .details h4 {
+    font-size: 34px;
+    /* line-height: 1.5;
+    letter-spacing: 0.5px; */
+    font-weight: bold;
+  }
+}
+
 /*--------------------------------------------------------------
 # Pricing
 --------------------------------------------------------------*/
 
 .pricing h2 {
-  color: #fafbfb;
+  color: #000;
   font-size: 50px;
   font-weight: bold;
 }
 .pricing p {
-  color: #fafbfb;
+  color: #000;
 }
 .pricing a {
   font-size: 20px;

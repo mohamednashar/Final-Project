@@ -152,7 +152,7 @@ var not1 = document.getElementById("not1");
 var not1 = document.getElementById("not2");
 var not1 = document.getElementById("not3");
 var text_area = document.getElementById("text_area");
-var gender = document.querySelector('input[name="gender"]:checked').value;
+// var gender = document.querySelector('input[name="gender"]:checked').value;
 var submit = document.getElementById("submit");
 
 // Insert Data

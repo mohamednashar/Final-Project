@@ -818,42 +818,44 @@
     <!-- End Team Section -->
 
     <!-- CV Review -->
-    <section class="cv position-relative">
+    <section class="cv position-relative d-flex flex-column justify-content-center">
       <!-- <img src="assets/img/image-2.jpg" alt="cv client" class="position-absolute" height="130%"> -->
-      <div class="contianer">
-        <!-- Button CV modal -->
-        <div class="text-center col-lg-5 col-md-5 col-sm-3" data-aos="fade-up">
-          <p>Add your Cv and we get recommendations to improve it </p>
-          <button type="button" class="btn review col-lg-3 border-circle" data-toggle="modal" data-target="#cvModal"
-            data-backdrop="static" data-keyboard="false">
-            Review your CV
-          </button>
-          <div id="response2">
+      <div class="container">
+        <div class="row">
+          <!-- Button CV modal -->
+          <div class="col-lg-6 col-md-5 col-10 details" data-aos="fade-up">
+            <h4 class="poppins-font text-light mb-4">Add your Cv and we get recommendations to improve it </h4>
+            <button type="button" class="btn review col-lg-5 border-circle" data-toggle="modal" data-target="#cvModal"
+              data-backdrop="static" data-keyboard="false">
+              Review your CV
+            </button>
+            <div id="response2">
+            </div>
           </div>
-        </div>
-        <!-- Modal -->
-        <div class="modal fade" id="cvModal" tabindex="-1" role="dialog" aria-labelledby="cvModalLabel"
-          aria-hidden="true">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="cvModalLabel">Review Your CV</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <div class="container">
-                  <div class="form-group">
-                    <textarea class="form-control" rows="5" id="cv-input" placeholder="Add your cv"></textarea>
+          <!-- Modal -->
+          <div class="modal fade" id="cvModal" tabindex="-1" role="dialog" aria-labelledby="cvModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="cvModalLabel">Review Your CV</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="container">
+                    <div class="form-group">
+                      <textarea class="form-control" rows="5" id="cv-input" placeholder="Add your cv"></textarea>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" onclick="getResponse(2)" class="btn border-circle" data-dismiss="modal">Review
-                  your
-                  CV in 30 sec by</button>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" onclick="getResponse(2)" class="btn border-circle" data-dismiss="modal">Review
+                    your
+                    CV in 30 sec by</button>
+                </div>
               </div>
             </div>
           </div>

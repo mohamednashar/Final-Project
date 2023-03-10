@@ -454,7 +454,7 @@ $(document).ready(function () {
       scroll_start = $(this).scrollTop();
       if (scroll_start > offset.top) {
         $("#header").css("background-color", "#fff");
-        $("#header a").css("color", "#000");
+        $("#header a").css("color", "#4898d3");
         $("#header .drop-about .scrollto").css("color", "#009cea");
         $("#header .lang").css("color", "#009cea");
         $("#header").css("background-color", "#fff");

@@ -62,6 +62,12 @@ h6 {
 .color-blue {
   color: #4b97d2;
 }
+.border-blue {
+  border: 1px solid #4898d3;
+  background-color: transparent;
+  padding: 5px;
+  font-family: "Poppins", sans-serif;
+}
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -398,6 +404,14 @@ h6 {
 
 .navbar-mobile .dropdown > .dropdown-active {
   display: block;
+}
+
+/*--------------------------------------------------------------
+# Modal
+--------------------------------------------------------------*/
+.modal .required {
+  font-size: 18px;
+  font-family: "Poppins";
 }
 
 /*--------------------------------------------------------------

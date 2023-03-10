@@ -457,6 +457,9 @@ $(document).ready(function () {
         $("#header a").css("color", "#000");
         $("#header .drop-about .scrollto").css("color", "#009cea");
         $("#header .lang").css("color", "#009cea");
+        $("#header").css("background-color", "#fff");
+        $("#header a").css("color", "#000");
+     
       } else {
         $("#header").css("background-color", "transparent");
         $("#header a").css("color", "#fff");

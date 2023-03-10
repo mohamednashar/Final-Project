@@ -174,8 +174,6 @@ h6 {
   border-color: #fd625e;
 }
 
-
-
 /*--------------------------------------------------------------
 # Disable AOS delay on mobile
 --------------------------------------------------------------*/
@@ -488,7 +486,36 @@ h6 {
   font-size: 18px;
   font-family: "Poppins";
 }
-
+.modal-header .close {
+  font-size: 36px;
+  color: #888;
+  font-weight: 300;
+  text-shadow: none;
+  opacity: 1;
+}
+.modal-header h3 {
+  font-size: 22px;
+  font-weight: 300;
+  color: #555;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+}
+.modal-header p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #888;
+  font-family: "Poppins", sans-serif;
+  line-height: 30px;
+}
+/* .modal-header .btn-close {
+  margin-top: 0;
+} */
+.modal .modal-body .gender {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -1006,7 +1033,7 @@ section {
       rgba(255, 255, 255, 0.8),
       rgba(255, 255, 255, 0.8)
     ),
-    url("../img/cta-bg.jpg") center center;
+    url("../img/career1.jpg") center center;
   background-size: cover;
   padding: 80px 0;
 }
@@ -1428,7 +1455,7 @@ section {
 }
 @media (min-width: 1024px) {
   .cv .details h4 {
-    font-size: 34px;
+    font-size: 50px;
     /* line-height: 1.5;
     letter-spacing: 0.5px; */
     font-weight: bold;

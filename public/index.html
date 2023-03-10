@@ -277,61 +277,62 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header flex-column align-items-start">
-          <h5 class="modal-title" id="exampleModalLabel">What Career Can I Coach?</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <h3 class="modal-title" id="exampleModalLabel">What Career Can I Coach?</h3>
+          <p>Fill in the form below to join us as an instractor:</p>
         </div>
-        <div class="modal-body">
+        <div class="modal-body text-center">
           <form class="registration-form">
             <div class="form-group">
-              <input value="" id="in1" type="text" class="border-circle border-blue col-10" placeholder="Enter Your Name In English">
+              <input value="" id="in1" type="text" class="border-circle border-blue col-12"
+                placeholder="Enter Your Name In English">
             </div>
 
             <div class="form-group">
-              <input id="in2" type="text" class="border-circle border-blue col-10" placeholder="Enter Your Name In Arabic">
+              <input id="in2" type="text" class="border-circle border-blue col-12"
+                placeholder="Enter Your Name In Arabic">
             </div>
 
             <div class="form-group">
-              <input id="in3" type="text" class="border-circle border-blue col-10" placeholder="Enter Your Email">
+              <input id="in3" type="text" class="border-circle border-blue col-12" placeholder="Enter Your Email">
             </div>
 
             <div class="form-group">
-              <input id="in4" type="text" name="" id="" class="border-circle border-blue col-10" placeholder="Enter Your WhatsApp Number">
+              <input id="in4" type="text" name="" class="border-circle border-blue col-12"
+                placeholder="Enter Your WhatsApp Number">
             </div>
 
             <div class="form-group">
-              <textarea name="form-about-yourself" placeholder="About yourself" class="form-about-yourself form-control" 
-                id="in5"></textarea>
+              <textarea name="form-about-yourself" placeholder="About yourself"
+                class="form-about-yourself col-12 form-control" id="in5"></textarea>
             </div>
 
             <div class="form-group">
-              <input id="in6" type="text" class="border-circle border-blue col-10" placeholder="Where are you located?">
+              <input id="in6" type="text" class="border-circle border-blue col-12" placeholder="Where are you located?">
             </div>
 
             <div class="form-group">
 
-              <input id="in7" type="number" placeholder="How old are you?" min="0">
+              <input id="in7" type="number" class="col-12" placeholder="How old are you?" min="18">
             </div>
-            
-            <label class="required my-3 mr-2">What's Your Gender?</label>
 
-            <input type="radio" name="gender" value="male"> Male
-            <input type="radio" name="gender" value="female"> Female
-            <br>
+            <div class="form-group gender">
+              <label class="required my-3 mr-2">What is Your Gender?</label>
+
+              <input type="radio" name="gender" value="male"> Male
+              <input type="radio" name="gender" value="female"> Female
+            </div>
+
             <button id="next_1" data-bs-target="#exampleModal-2" data-bs-toggle="modal" type="button"
-            class="btn btn-primary">Next</button>
+              class="btn btn-primary col-9">Next</button>
           </form>
-
-
         </div>
-        
+
       </div>
     </div>
-  </div>  
+  </div>
 
 
-
-  
-  
   <div class="modal fade" id="exampleModal-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -351,15 +352,22 @@
                   <div class="overSelect"></div>
                 </div>
                 <div id="mySelectOptions">
-                  <label><input type="checkbox" id="check1" onchange="checkboxStatusChange()" value="Individual Contributor" name="jobTitle" /> Individual Contributor</label>
-                  <label><input type="checkbox" id="check2" onchange="checkboxStatusChange()" value=" Middle Manager" name="jobTitle" /> Middle Manager</label>
-                  <label><input type="checkbox" id="check3" onchange="checkboxStatusChange()" value="Senior Manager" name="jobTitle" /> Senior Manager</label>
-                  <label><input type="checkbox" id="check4" onchange="checkboxStatusChange()" value="Director/VP" name="jobTitle" /> Director/VP</label>
-                  <label><input type="checkbox" id="check5" onchange="checkboxStatusChange()" value="C-suite/Executive" name="jobTitle" /> C-suite/Executive</label>
-                  <label><input type="checkbox" id="check6" onchange="checkboxStatusChange()" value="Founder/Business Owner" name="jobTitle" /> Founder/Business Owner</label>
-                  <label><input type="checkbox" id="check7" onchange="checkboxStatusChange()" value="Other" name="jobTitle" /> Other</label>
-     
-              
+                  <label><input type="checkbox" id="check1" onchange="checkboxStatusChange()"
+                      value="Individual Contributor" name="jobTitle" /> Individual Contributor</label>
+                  <label><input type="checkbox" id="check2" onchange="checkboxStatusChange()" value=" Middle Manager"
+                      name="jobTitle" /> Middle Manager</label>
+                  <label><input type="checkbox" id="check3" onchange="checkboxStatusChange()" value="Senior Manager"
+                      name="jobTitle" /> Senior Manager</label>
+                  <label><input type="checkbox" id="check4" onchange="checkboxStatusChange()" value="Director/VP"
+                      name="jobTitle" /> Director/VP</label>
+                  <label><input type="checkbox" id="check5" onchange="checkboxStatusChange()" value="C-suite/Executive"
+                      name="jobTitle" /> C-suite/Executive</label>
+                  <label><input type="checkbox" id="check6" onchange="checkboxStatusChange()"
+                      value="Founder/Business Owner" name="jobTitle" /> Founder/Business Owner</label>
+                  <label><input type="checkbox" id="check7" onchange="checkboxStatusChange()" value="Other"
+                      name="jobTitle" /> Other</label>
+
+
                 </div>
               </div>
             </div>
@@ -426,18 +434,21 @@
                   <div class="overSelect"></div>
                 </div>
                 <div id="mySelectOptions2">
-                  <label ><input type="checkbox" id="check7" onchange="checkboxStatusChange()" value="Sales & Marketing" />Sales & Marketing</label>
-                  <label ><input type="checkbox" id="check8" onchange="checkboxStatusChange()" value="Business Management" /> Business Management</label>
-                  <label ><input type="checkbox" id="check9" onchange="checkboxStatusChange()" value="Soft Skills" /> Soft Skills</label>
-                  <label ><input type="checkbox" id="check10" onchange="checkboxStatusChange()" value="HR" /> HR</label>
-                  <label ><input type="checkbox" id="check11" onchange="checkboxStatusChange()" value="Finance" /> Finance</label>
-                  <label ><input type="checkbox" id="check12" onchange="checkboxStatusChange()" value="Other" /> Other</label>
-                 
+                  <label><input type="checkbox" id="check7" onchange="checkboxStatusChange()"
+                      value="Sales & Marketing" />Sales & Marketing</label>
+                  <label><input type="checkbox" id="check8" onchange="checkboxStatusChange()"
+                      value="Business Management" /> Business Management</label>
+                  <label><input type="checkbox" id="check9" onchange="checkboxStatusChange()" value="Soft Skills" />
+                    Soft Skills</label>
+                  <label><input type="checkbox" id="check10" onchange="checkboxStatusChange()" value="HR" /> HR</label>
+                  <label><input type="checkbox" id="check11" onchange="checkboxStatusChange()" value="Finance" />
+                    Finance</label>
+                  <label><input type="checkbox" id="check12" onchange="checkboxStatusChange()" value="Other" />
+                    Other</label>
+
                 </div>
               </div>
             </div>
-
-               
 
             <label class="required">What's your Profile LinkedIn link?</label>
             <br>
@@ -567,11 +578,11 @@
                 <option value="Facebook">Facebook</option>
                 <option value="LinkedIn">LinkedIn</option>
                 <option value="Other">Other</option>
-            
+
               </select>
             </div>
 
-            
+
           </form>
         </div>
         <div class="modal-footer">
@@ -683,7 +694,7 @@
         <div class="row">
           <!-- Button CV modal -->
           <div class="col-lg-6 col-md-5 col-10 details" data-aos="fade-up">
-            <h4 class="poppins-font text-light mb-4">Add your Cv and we get recommendations to improve it </h4>
+            <h4 class="poppins-font text-light mb-4">Improve your CV with the help of AI </h4>
             <button type="button" class="btn review col-lg-5 border-circle" data-toggle="modal" data-target="#cvModal"
               data-backdrop="static" data-keyboard="false">
               Review your CV
@@ -697,24 +708,22 @@
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="cvModalLabel">Review Your CV</h5>
+                  <h5 class="modal-title poppins-font" id="cvModalLabel">Review Your CV</h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body text-center">
                   <div class="container">
                     <div class="form-group">
                       <textarea class="form-control" rows="5" id="cv-input" placeholder="Add your cv"></textarea>
                     </div>
+                    <button type="button" onclick="getResponse(2)" class="btn border-circle" data-dismiss="modal">Review
+                      your
+                      CV in 30 sec</button>
                   </div>
                 </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="button" onclick="getResponse(2)" class="btn border-circle" data-dismiss="modal">Review
-                    your
-                    CV in 30 sec by</button>
-                </div>
+
               </div>
             </div>
           </div>

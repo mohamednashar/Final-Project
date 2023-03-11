@@ -1086,6 +1086,16 @@ section {
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
+.testimonials {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  /* height: 100vh; */
+}
+.testimonials .section-title h2,
+.testimonials .section-title p {
+  color: #fafbfb;
+}
 .testimonials .testimonials-carousel,
 .testimonials .testimonials-slider {
   overflow: hidden;
@@ -1093,7 +1103,7 @@ section {
 
 .testimonials .testimonial-item {
   box-sizing: content-box;
-  min-height: 320px;
+  height: 320px;
 }
 
 .testimonials .testimonial-item .testimonial-img {
@@ -1106,15 +1116,15 @@ section {
 }
 
 .testimonials .testimonial-item h3 {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
   margin: 10px 0 5px 45px;
   color: #111;
 }
 
 .testimonials .testimonial-item h4 {
-  font-size: 14px;
-  color: #999;
+  font-size: 17px;
+  color: snow;
   margin: 0 0 0 45px;
 }
 
@@ -1144,6 +1154,7 @@ section {
   background: #f4f6f7;
   position: relative;
   border-radius: 6px;
+  height: 200px;
   position: relative;
   z-index: 1;
 }
@@ -1163,6 +1174,18 @@ section {
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #009cea;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1397,21 +1420,20 @@ section {
 /*--------------------------------------------------------------
 # Clients
 --------------------------------------------------------------*/
-.clients .clients-wrap {
-  border-top: 1px solid #eceff0;
-  border-left: 1px solid #eceff0;
-}
 
 .clients .client-logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-right: 1px solid #eceff0;
-  border-bottom: 1px solid #eceff0;
+  /* border-right: 1px solid #eceff0;
+  border-bottom: 1px solid #eceff0; */
   overflow: hidden;
-  background: #fff;
+  /* background: #fff; */
   height: 120px;
-  padding: 40px;
+  /* padding: 40px; */
+  background-color: #f7f8f9;
+  border-radius: 10px;
+  padding: 75px 60px;
 }
 
 .clients .client-logo img {

@@ -11327,9 +11327,9 @@ const unwrap = (value) => reverseTransformCache.get(value);
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
-/*!****************************!*\
-  !*** ./assets/js/index.js ***!
-  \****************************/
+/*!***********************************!*\
+  !*** ./public/assets/js/index.js ***!
+  \***********************************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var firebase_app__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! firebase/app */ "./node_modules/firebase/app/dist/esm/index.esm.js");
 /* harmony import */ var firebase_firestore_lite__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! firebase/firestore/lite */ "./node_modules/firebase/firestore/lite/dist/esm/index.esm.js");

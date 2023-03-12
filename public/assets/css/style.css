@@ -2157,6 +2157,97 @@ section {
   font-size: 17px;
 }
 
-input:focus {
-  outline: none;
+
+
+input[type="checkbox"] {
+
+  margin-right: 10px !important;
+}
+
+#mySelectOptions label{
+  display: flex !important;
+ 
+}
+
+#mySelectOptions2 label{
+  display: flex !important;
+ 
+}
+
+
+
+input[type='checkbox']:checked {
+  background-color: rgb(60,69,77,0.9);
+}
+input[type='checkbox']:checked:after {
+  content: '\2713';
+  color:white;
+}
+
+
+
+
+
+:root {
+  --form-control-color: #4b97d2;
+}
+
+.flex-gender{
+  display: flex;
+  align-items: center;
+}
+
+.flex-gender input{
+  margin-right: 5px !important;
+}
+
+#flex-gender-2{
+ margin-left: 10px;
+}
+
+.form-control {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.1;
+  display: grid;
+
+}
+.form-control + .form-control {
+  margin-top: 1em;
+}
+.form-control:focus-within {
+  color: var(--form-control-color);
+}
+input[type="radio"] {
+ /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+ /* Remove most all native input styles */
+  appearance: none;
+ /* For iOS < 15 */
+  background-color: var(--form-background);
+ /* Not removed via appearance */
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid currentColor;
+  border-radius: 50%;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+}
+input[type="radio"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-color);
+ /* Windows High Contrast Mode */
+
+}
+input[type="radio"]:checked::before {
+  transform: scale(1);
 }

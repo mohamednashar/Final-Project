@@ -40,7 +40,7 @@ window.onload = (event) => {
       values.push(checkboxValue);
     }
   
-    var dropdownValue = "Nothing is selected";
+    var dropdownValue = "Job Title";
     if (values.length > 0) {
       dropdownValue = values.join(', ');
     }

@@ -290,7 +290,7 @@ var in10 = document.getElementById("in10");
 var in11 = document.getElementById("in11");
 var in12 = document.getElementById("in12");
 var in13 = document.getElementById("in13");
-var in13 = document.getElementById("in14");
+var in14 = document.getElementById("in14");
 
 var check1 = document.getElementById("check1");
 var check2 = document.getElementById("check2");
@@ -305,20 +305,101 @@ var check10 = document.getElementById("check10");
 var check11 = document.getElementById("check11");
 var check12 = document.getElementById("check12");
 var text_area = document.getElementById("text_area");
+pattern=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+patternwhats= /^01[0125][0-9]{8}$/
+patternEnglish=/^[a-zA-Z][a-zA-Z '-.‘’]+$/
+patternArabic=/^[\u0621-\u064A]+$/
 
 var flg = 0;
 var flg2 = 0;
+
+in3.addEventListener("input", function () {
+  if(in3.value.match(pattern))
+  {
+    in3.style.border="2px solid green";
+    document.getElementById("valid").style.display="none";
+    
+    
+   
+  }
+  else
+  {
+    in3.style.border="2px solid red";
+    document.getElementById("valid").style.display="block";
+  }
+
+});
+
+in4.addEventListener("input", function () {
+  if(in4.value.match(patternwhats))
+{
+  in4.style.border="2px solid rgb(0, 220, 0)";
+  document.getElementById("valid2").style.display="none";
+  
+  
+ 
+}
+else
+{
+  in4.style.border="2px solid red";
+  document.getElementById("valid2").style.display="block";
+}
+
+});
+
+in1.addEventListener("input", function () {
+  if(in1.value.match(patternEnglish))
+{
+  in1.style.border="2px solid rgb(0, 220, 0)";
+  document.getElementById("valid3").style.display="none";
+  
+  
+ 
+}
+else
+{
+  in1.style.border="2px solid red";
+  document.getElementById("valid3").style.display="block";
+}
+
+});
+
+in2.addEventListener("input", function () {
+  if(in2.value.match(patternArabic))
+{
+  in2.style.border="2px solid rgb(0, 220, 0)";
+  document.getElementById("valid4").style.display="none";
+  
+  
+ 
+}
+else
+{
+  in2.style.border="2px solid red";
+  document.getElementById("valid4").style.display="block";
+}
+
+});
+
+
+
+
+
+
+
+
 
 [in1, in2, in3, in4, in5, in6, in7].forEach(function (element) {
   element.addEventListener("input", function () {
     if (
       in1.value != "" &&
       in2.value != "" &&
-      in3.value != "" &&
+      in3.value.match(pattern) &&
       in4.value != "" &&
       in5.value != "" &&
       in6.value != "" &&
-      in7.value != ""
+      in7.value != "" 
+      
     ) {
       next_1.disabled = false;
     } else {
@@ -326,6 +407,8 @@ var flg2 = 0;
     }
   });
 });
+
+
 
 [check1, check2, check3, check4, check5, check6].forEach(function (element2) {
   element2.addEventListener("click", function () {
@@ -356,11 +439,15 @@ var flg2 = 0;
   }
 );
 
+
+
+
 [check7, check8, check9, check10, check11, check12].forEach(function (
   element4
 ) {
   element4.addEventListener("click", function () {
     if (
+      check7.checked ||
       check8.checked ||
       check9.checked ||
       check10.checked ||
@@ -421,6 +508,9 @@ $(document).ready(function () {
         $("#header a").css("color", "#4B97D2");
         $("#header .drop-about .scrollto").css("color", "#009cea");
         $("#header .lang").css("color", "#009cea");
+        $("#header").css("background-color", "#fff");
+        $("#header a").css("color", "#009cea");
+
       } else {
         $("#header").css("background-color", "transparent");
         $("#header a").css("color", "#fff");

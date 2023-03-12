@@ -283,25 +283,30 @@
         <div class="modal-header flex-column align-items-start">
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           <h3 class="modal-title" id="exampleModalLabel">What Career Can I Coach?</h3>
-          <p>Fill in the form below to join us as an instractor:</p>
+          <p>Fill in the form below to join us as an instructor:</p>
         </div>
         <div class="modal-body text-center">
           <form class="registration-form">
             <div class="form-group">
+              
+              <p style="color: rgb(227, 30, 30); display:none; transition: 0.5s all;" class="text-start" id="valid3">Please Enter Valid English Name</p>
               <input value="" id="in1" type="text" class="border-circle border-blue col-12"
                 placeholder="Enter Your Name In English">
             </div>
 
             <div class="form-group">
+              <p style="color: rgb(227, 30, 30); display:none; transition: 0.5s all;" class="text-start" id="valid4">Please Enter Valid Arabic Name</p>
               <input id="in2" type="text" class="border-circle border-blue col-12"
                 placeholder="Enter Your Name In Arabic">
             </div>
 
             <div class="form-group">
+              <p style="color: rgb(227, 30, 30); display:none; transition: 0.5s all;" class="text-start" id="valid">Please Enter Valid Email</p>
               <input id="in3" type="text" class="border-circle border-blue col-12" placeholder="Enter Your Email">
             </div>
 
             <div class="form-group">
+              <p style="color: rgb(227, 30, 30); display:none; transition: 0.5s all;" class="text-start" id="valid2">Please Enter Valid Egyptian Number</p>
               <input id="in4" type="text" name="" class="border-circle border-blue col-12"
                 placeholder="Enter Your WhatsApp Number">
             </div>
@@ -320,11 +325,14 @@
               <input id="in7" type="number" class="col-12" placeholder="How old are you?" min="18">
             </div>
 
-            <div class="form-group gender">
+            <div class="form-group text-start">
               <label class="required my-3 mr-2">What is Your Gender?</label>
-
-              <input type="radio" name="gender" value="male"> Male
-              <input type="radio" name="gender" value="female"> Female
+              <br>
+              <div class="flex-gender">
+              <input  class="form-control" type="radio" name="gender" value="male"> Male
+              <br>
+              <input id="flex-gender-2" class="form-control" type="radio" name="gender" value="female"> Female
+            </div>
             </div>
 
             <button id="next_1" data-bs-target="#exampleModal-2" data-bs-toggle="modal" type="button"
@@ -340,14 +348,13 @@
   <div class="modal fade" id="exampleModal-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
-        <div class="modal-header">
+        <div class="modal-header flex-column align-items-start">
           <h5 class="modal-title" id="exampleModalLabel">What Career Can I Coach? <br> <span>2</span></h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">
-          <form action="">
-            <label class="required">How would you describe your job title? </label>
-            <div class="form-group col-sm-8">
+        <div class="modal-body text-center">
+          <form class="registration-form">
+            <div class="form-group">
               <div id="myMultiselect" class="multiselect">
                 <div id="mySelectLabel" class="selectBox" onclick="toggleCheckboxArea()">
                   <select class="form-select">
@@ -376,24 +383,23 @@
               </div>
             </div>
 
-            <label class="required">What's the name of your college/university?</label>
-            <br>
-            <input id="in8" type="text">
-            <br>
-            <label class="required">Field of study</label>
-            <br>
-            <input id="in9" type="text">
-            <br>
+        
+            <div class="form-group">
+              <input value="" id="in8" type="text" class="border-circle border-blue col-12"
+                placeholder="What's the name of your college/university?">
+            </div>
 
-            <label class="required">Graduation year</label>
-            <br>
-            <input id="in10" type="text">
-            <br>
+            <div class="form-group">
+              <input value="" id="in9" type="text" class="border-circle border-blue col-12"
+                placeholder="Field of study">
+            </div>
 
+            <div class="form-group">
+              <input value="" id="in10" type="number" class="border-circle border-blue col-12" min="1990"
+                placeholder="Graduation Year">
+            </div>
 
-            <label class="required">What is your Degree?</label>
-
-            <div class="form-group col-sm-8">
+            <div class="form-group">
               <select id="degr" class="form-select">
                 <option value="Bachelor" selected>Bachelor</option>
                 <option value="Master">Master</option>
@@ -402,14 +408,14 @@
               </select>
             </div>
 
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
+            <button type="button" class="btn btn-secondary" id="bacc" data-bs-toggle="modal"
             data-bs-target="#exampleModal-1">Back</button>
           <button id="next_2" type="button" class="btn btn-primary" data-bs-toggle="modal"
             data-bs-target="#exampleModal-3">Next</button>
+
+          </form>
         </div>
+        
       </div>
     </div>
   </div>
@@ -417,76 +423,74 @@
   <div class="modal fade" id="exampleModal-3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
-        <div class="modal-header">
+        <div class="modal-header flex-column align-items-start">
           <h5 class="modal-title" id="exampleModalLabel">What Career Can I Coach? <br> <span>3</span></h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">
-          <form action="">
-            <label class="required">Do you have work experience or not</label>
-            <br>
-            <textarea name="" id="in11" cols="25" style="height: 35px;"></textarea>
+        <div class="modal-body text-center">
+          <form class="registration-form">
+            
+            <div class="form-group">
+            <textarea class="col-12" name="" id="in11" placeholder="Write Work Experience"></textarea>
+          </div>  
 
-            <label class="required">What is the industry you can give coaching in?</label>
+  
 
-            <div class="form-group col-sm-8">
+            <div class="form-group">
               <div id="myMultiselect2" class="multiselect">
                 <div id="mySelectLabel2" class="selectBox" onclick="toggleCheckboxArea2()">
                   <select class="form-select">
-                    <option>somevalue</option>
+                    <option>Coaching</option>
                   </select>
                   <div class="overSelect"></div>
                 </div>
                 <div id="mySelectOptions2">
-                  <label><input type="checkbox" id="check7" onchange="checkboxStatusChange()"
-                      value="Sales & Marketing" />Sales & Marketing</label>
-                  <label><input type="checkbox" id="check8" onchange="checkboxStatusChange()"
+    
+                  <label><input type="checkbox" name="coachingg" id="check8" onchange="checkboxStatusChange()"
                       value="Business Management" /> Business Management</label>
-                  <label><input type="checkbox" id="check9" onchange="checkboxStatusChange()" value="Soft Skills" />
+                  <label><input type="checkbox" name="coachingg" id="check9" onchange="checkboxStatusChange()" value="Soft Skills" />
                     Soft Skills</label>
-                  <label><input type="checkbox" id="check10" onchange="checkboxStatusChange()" value="HR" /> HR</label>
-                  <label><input type="checkbox" id="check11" onchange="checkboxStatusChange()" value="Finance" />
+                  <label><input type="checkbox" name="coachingg" id="check10" onchange="checkboxStatusChange()" value="HR" /> HR</label>
+                  <label><input type="checkbox" name="coachingg" id="check11" onchange="checkboxStatusChange()" value="Finance" />
                     Finance</label>
-                  <label><input type="checkbox" id="check12" onchange="checkboxStatusChange()" value="Other" />
+                  <label><input type="checkbox" name="coachingg" id="check12" onchange="checkboxStatusChange()" value="Other" />
                     Other</label>
 
                 </div>
               </div>
             </div>
 
-            <label class="required">What's your Profile LinkedIn link?</label>
-            <br>
-            <input id="in12" type="text">
-            <br>
-            <label class="required">Add your profile picture as a link.</label>
-            <br>
-            <input id="in13" type="text">
-            <br>
-            <label>Add your CV link, if you have.</label>
-            <br>
-            <input id="not1" type="text">
-            <br>
-            <label>What's your objective in life?</label>
-            <br>
-            <input id="not2" type="text">
-            <br>
-            <label>Who is your role model?</label>
-            <br>
-            <input id="not3" type="text">
-            <br>
-            <label class="required">What's your hourly rate for an hour coach session?</label>
-            <br>
-            <input id="in14" type="text">
-            <br>
-          </form>
+            <div class="form-group">
+              <input class="col-12" id="in12" type="text" placeholder="LinkedIn Profile Link">
+            </div>
 
+            <div class="form-group">
+              <input class="col-12" id="in13" type="text" placeholder="Profile Picture Link">
+            </div>
 
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
+            <div class="form-group">
+              <input class="col-12" id="not1" type="text" placeholder="CV Link">
+            </div>
+
+            <div class="form-group">
+              <input class="col-12" id="not2" type="text" placeholder="Your Objective In Life">
+            </div>
+
+            <div class="form-group">
+              <input class="col-12" id="not3" type="text" placeholder="Your Role Model">
+            </div>
+
+            <div class="form-group">
+              <input class="col-12" id="in14" type="text" placeholder="What's your hourly rate for an hour coach session?">
+            </div>
+
+            <button id="bacc" type="button" class="btn btn-secondary" data-bs-toggle="modal"
             data-bs-target="#exampleModal-2">Back</button>
           <button id="next_3" data-bs-toggle="modal" data-bs-target="#exampleModal-4" type="button"
             class="btn btn-primary">Next</button>
+
+          </form>
+          
         </div>
       </div>
     </div>
@@ -495,12 +499,12 @@
   <div class="modal fade" id="exampleModal-4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
-        <div class="modal-header">
+        <div class="modal-header flex-column align-items-start">
           <h5 class="modal-title" id="exampleModalLabel">What Career Can I Coach? <br> <span>4</span></h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">
-          <form action="">
+        <div class="modal-body text-center">
+          <form class="registration-form">
             <label class="required">Please add your bank account details or wallet details</label>
             <p>For Example: Bank Name: CIB | Commercial International bank of Egypt
               Beneficiary Name: Ibrahim Anwar Mohamed Elsoufi Mahmoud Elashiri
@@ -512,20 +516,24 @@
               IBAN: EG200010011900000100035645197
               Or
               Vodafone cash: 01026623085</p>
-            <textarea id="text_area" cols="20" style="height: 100px;"></textarea>
-            <label>Please add your calendly.com link as we will send it to the clients after they pay</label>
-            <input type="text" name="" id="">
-            <br>
 
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
+              <div class="form-group">
+                <textarea class="col-12" id="text_area"  style="height: 100px;"></textarea>
+              </div>
+
+              <div class="form-group">
+                <input class="col-12" type="text" name="" id="Calendly" placeholder="Calendly Link (If You Have)">
+              </div>
+
+              <button id="bacc" type="button" class="btn btn-secondary" data-bs-toggle="modal"
             data-bs-target="#exampleModal-3">Back</button>
           <button id="next_4" data-bs-toggle="modal" data-bs-target="#exampleModal-5" type="button"
             class="btn btn-primary">Next</button>
+        
 
+          </form>
         </div>
+  
       </div>
     </div>
   </div>
@@ -533,16 +541,15 @@
   <div class="modal fade" id="exampleModal-5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
-        <div class="modal-header">
+        <div class="modal-header flex-column align-items-start">
           <h5 class="modal-title" id="exampleModalLabel">What Career Can I Coach? <br> <span>5</span></h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">
-          <form action="">
+        <div class="modal-body text-center">
+          <form class="registration-form">
 
             <label class="required">English Language skills</label>
-
-            <div class="form-group col-sm-8">
+            <div class="form-group">
               <select id="englishSkills" class="form-select">
                 <option value="Native" selected>Native</option>
                 <option value="Fluent">Fluent</option>
@@ -551,9 +558,9 @@
               </select>
             </div>
 
-            <label class="required">Are you available/free for at least 2:3 hours every week?</label>
+            <label class="required">Are you available at least 2 hours every week?</label>
 
-            <div class="form-group col-sm-8">
+            <div class="form-group">
               <select id="availability" class="form-select">
                 <option value="Yes" selected>Yes</option>
                 <option value="No">No</option>
@@ -563,7 +570,7 @@
 
             <label for="">Tell us about your experience in programming.</label>
 
-            <div class="form-group col-sm-8">
+            <div class="form-group">
               <select id="programming" class="form-select">
                 <option value="Excellent" selected>Excellent</option>
                 <option value="Very Good">Very Good</option>
@@ -576,7 +583,7 @@
 
             <label for="">How did you hear about us?</label>
 
-            <div class="form-group col-sm-8">
+            <div class="form-group">
               <select id="aboutus" class="form-select">
                 <option value="Google" selected>Google</option>
                 <option value="Facebook">Facebook</option>
@@ -586,16 +593,15 @@
               </select>
             </div>
 
-
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
+            <button id="bacc" type="button" class="btn btn-secondary" data-bs-toggle="modal"
             data-bs-target="#exampleModal-4">Back</button>
           <button id="submit" data-bs-toggle="modal" data-bs-target="#exampleModal-5" type="button"
             class="btn btn-primary">Submit</button>
 
+
+          </form>
         </div>
+  
       </div>
     </div>
   </div>

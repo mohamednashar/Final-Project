@@ -58,7 +58,7 @@ var degr = document.getElementById("degr");
 var next_1 = document.getElementById("next_1");
 var next_2 = document.getElementById("next_2");
 var next_3 = document.getElementById("next_3");
-var next_4 = document.getElementById("next_3");
+var next_4 = document.getElementById("next_4");
 var submit = document.getElementById("submit");
 var not1 = document.getElementById("not1");
 var not2 = document.getElementById("not2");
@@ -116,6 +116,15 @@ async function Add2() {
 }
 
 async function Add3() {
+
+    var coachingg = document.querySelectorAll('input[name="coachingg"]:checked');
+
+    let values2 = [];
+    for (var i = 0; i < coachingg.length; i++) 
+    {
+        values2.push(coachingg[i].value);
+      }
+
     var ref = collection(db, "Third Page");
     const docRef = await addDoc(
         ref, {
@@ -126,11 +135,8 @@ async function Add3() {
         CVLink: not1.value,
         Life: not2.value,
         RoleModel: not3.value,
-        SalesMarketing: check7,
-        BusinessManagement: check8,
-        SoftSkills: check9,
-        HR: check10,
-        Finance: check11,
+        Coaching:values2
+      
     }
     )
 }

@@ -643,7 +643,7 @@ section {
 
 @media (max-width: 992px) {
   .about .container {
-    padding: 30px;
+    padding: 18px 18px 85px;
   }
 }
 

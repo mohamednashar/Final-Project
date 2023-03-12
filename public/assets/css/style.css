@@ -9,7 +9,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #444444;
 }
 
@@ -51,7 +51,7 @@ h6 {
   font-weight: bold;
 }
 .poppins-font {
-  font-family: "poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .poppins-bold {
   font-family: "Poppins-ExtraBold";
@@ -548,7 +548,7 @@ h6 {
   padding-left: 20px;
 }
 #hero .btn-get-started {
-  font-family: "poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: lighter;
   font-size: 15px;
   text-transform: capitalize;
@@ -606,6 +606,7 @@ section {
 .section-title {
   text-align: center;
   padding-bottom: 30px;
+  font-family: "Poppins", sans-serif;
 }
 
 .section-title h2 {
@@ -1071,7 +1072,7 @@ section {
   color: #364146;
   font-size: 50px;
   font-weight: 700;
-  font-family: "Poppin", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .cta p {
@@ -1079,7 +1080,7 @@ section {
 }
 
 .cta .cta-btn {
-  font-family: "Poppin", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 15px;
   letter-spacing: 1px;
@@ -1628,7 +1629,7 @@ section {
   /* border-radius: 4px; */
   color: #009cea;
   font-size: 13px;
-  font-family: "Raleway", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -1679,15 +1680,19 @@ section {
 .faq .faq-list li {
   border-bottom: 1px solid #e3e7e9;
   margin-bottom: 20px;
-  padding-bottom: 20px;
+  /* padding-bottom: 20px; */
+  padding: 20px 0;
+}
+.faq .faq-list .questions {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 .faq .faq-list .question {
   display: block;
   position: relative;
-  font-family: #009cea;
+  font-family: "Poppins", sans-serif;
   font-size: 18px;
-  line-height: 24px;
+  /* line-height: 24px; */
   font-weight: 400;
   padding-left: 25px;
   cursor: pointer;
@@ -1698,13 +1703,24 @@ section {
 .faq .faq-list i {
   font-size: 16px;
   position: absolute;
-  left: 0;
+  right: 25px;
   top: -2px;
+  text-align: center;
+  border: 1px solid #777777;
+  color: #777777;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
 }
-
+.faq .faq-list i.icon-close {
+  border: 2.5px solid #2282ff;
+  color: #2282ff;
+  font-weight: 900;
+}
 .faq .faq-list p {
   margin-bottom: 0;
   padding: 10px 0 0 25px;
+  font-size: 15px;
 }
 
 .faq .faq-list .icon-show {
@@ -1732,16 +1748,38 @@ section {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
-.contact .info {
-  padding: 30px;
-  background: #fff;
-  width: 100%;
-  border: 2px solid #e9ecee;
-  border-radius: 4px;
+.contact .section-title {
+  padding-bottom: 30px;
 }
+/* .contact .section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #009961;
+  bottom: 0;
+  left: 0;
+} */
+.contact .info {
+  width: 100%;
+  background: #fff;
+}
+/* .contact .info i {
+  font-size: 32px;
+  color: #009961;
+  float: left;
+  line-height: 1;
+} */
+/* .ri-map-pin-line:before {
+  content: "\ef14";
+} */
+/* .contact .fal::before {
+  content: "\f3c5";
+} */
 
 .contact .info i {
-  font-size: 20px;
+  font-size: 23px;
   color: #009cea;
   float: left;
   width: 44px;
@@ -1756,17 +1794,45 @@ section {
 
 .contact .info h4 {
   padding: 0 0 0 60px;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #364146;
+  color: #282828;
+}
+.contact .info p {
+  padding: 0 0 0 60px;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #5b5b5b;
+}
+.contact .info .email,
+.contact .info .phone {
+  margin-top: 40px;
 }
 
-.contact .info p {
-  padding: 0 0 10px 60px;
-  margin-bottom: 20px;
+.contact .php-email-form input {
+  height: 44px;
+}
+
+.contact .php-email-form input,
+.contact .php-email-form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-family: "Poppins", sans-serif;
   font-size: 14px;
-  color: #627680;
+  border-radius: 4px;
+}
+.contact .php-email-form textarea {
+  padding: 10px 12px;
+}
+
+.contact .php-email-form button[type="submit"] {
+  background: #2282ff;
+  border: 0;
+  padding: 10px 30px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px !important;
 }
 
 .contact .info .social-links {
@@ -1804,7 +1870,7 @@ section {
   width: 100%;
   padding: 30px;
   background: #fff;
-  border: 2px solid #e9ecee;
+  /* border: 2px solid #e9ecee; */
   border-radius: 4px;
 }
 
@@ -1942,18 +2008,19 @@ section {
 --------------------------------------------------------------*/
 #footer {
   background: #f7f8f9;
-  padding: 0 0 30px 0;
-  color: #364146;
+  /* padding: 0 0 30px 0; */
+  /* color: #364146; */
+  padding-top: 60px;
+  background: #212531;
   font-size: 14px;
 }
 
 #footer .footer-top {
-  background: #fff;
+  /* background: #fff; */
   padding: 60px 0 30px 0;
-  border-top: 2px solid #e9ecee;
-  border-bottom: 2px solid #e9ecee;
+  /* border-top: 2px solid #e9ecee; */
+  /* border-bottom: 2px solid #e9ecee; */
 }
-
 #footer .footer-top .footer-info {
   margin-bottom: 30px;
 }
@@ -1967,13 +2034,15 @@ section {
 }
 
 #footer .footer-top .footer-info p {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Raleway", sans-serif;
-  color: #576971;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
 }
-
+#footer .footer-top .footer-info p strong {
+  color: #2282ff;
+}
 #footer .footer-top .social-links a {
   font-size: 18px;
   display: inline-block;
@@ -1998,7 +2067,7 @@ section {
 #footer .footer-top h4 {
   font-size: 16px;
   font-weight: 600;
-  color: #364146;
+  color: #fff;
   position: relative;
   padding-bottom: 12px;
 }
@@ -2032,7 +2101,7 @@ section {
 }
 
 #footer .footer-top .footer-links ul a {
-  color: #576971;
+  color: #fff;
   transition: 0.3s;
   display: inline-block;
   line-height: 1;
@@ -2079,13 +2148,14 @@ section {
 #footer .copyright {
   text-align: center;
   padding-top: 30px;
+  color: #eaf8ff;
 }
 
 #footer .credits {
   padding-top: 8px;
   text-align: center;
   font-size: 13px;
-  color: #364146;
+  color: #fff;
 }
 
 .multi-selector {
@@ -2155,61 +2225,48 @@ section {
   color: red;
   font-size: 17px;
 }
-
-
-
 input[type="checkbox"] {
-
   margin-right: 10px !important;
 }
 
-#mySelectOptions label{
+#mySelectOptions label {
   display: flex !important;
- 
 }
 
-#mySelectOptions2 label{
+#mySelectOptions2 label {
   display: flex !important;
- 
 }
 
-
-
-input[type='checkbox']:checked {
-  background-color: rgb(60,69,77,0.9);
+input[type="checkbox"]:checked {
+  background-color: rgb(60, 69, 77, 0.9);
 }
-input[type='checkbox']:checked:after {
-  content: '\2713';
-  color:white;
+input[type="checkbox"]:checked:after {
+  content: "\2713";
+  color: white;
 }
-
-
-
-
 
 :root {
   --form-control-color: #4b97d2;
 }
 
-.flex-gender{
+.flex-gender {
   display: flex;
   align-items: center;
 }
 
-.flex-gender input{
+.flex-gender input {
   margin-right: 5px !important;
 }
 
-#flex-gender-2{
- margin-left: 10px;
+#flex-gender-2 {
+  margin-left: 10px;
 }
 
 .form-control {
   font-size: 2rem;
-  font-weight: bold;
+  /* font-weight: bold; */
   line-height: 1.1;
   display: grid;
-
 }
 .form-control + .form-control {
   margin-top: 1em;
@@ -2218,13 +2275,13 @@ input[type='checkbox']:checked:after {
   color: var(--form-control-color);
 }
 input[type="radio"] {
- /* Add if not using autoprefixer */
+  /* Add if not using autoprefixer */
   -webkit-appearance: none;
- /* Remove most all native input styles */
+  /* Remove most all native input styles */
   appearance: none;
- /* For iOS < 15 */
+  /* For iOS < 15 */
   background-color: var(--form-background);
- /* Not removed via appearance */
+  /* Not removed via appearance */
   margin: 0;
   font: inherit;
   color: currentColor;
@@ -2244,10 +2301,8 @@ input[type="radio"]::before {
   transform: scale(0);
   transition: 120ms transform ease-in-out;
   box-shadow: inset 1em 1em var(--form-control-color);
- /* Windows High Contrast Mode */
-
+  /* Windows High Contrast Mode */
 }
 input[type="radio"]:checked::before {
   transform: scale(1);
 }
-

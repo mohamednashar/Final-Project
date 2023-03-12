@@ -42,7 +42,6 @@ h6 {
 
 ::placeholder {
   padding-left: 20px;
-  color: #eaf8ff;
   font-size: 16px;
 }
 
@@ -2251,3 +2250,4 @@ input[type="radio"]::before {
 input[type="radio"]:checked::before {
   transform: scale(1);
 }
+

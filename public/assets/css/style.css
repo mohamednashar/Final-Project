@@ -389,7 +389,9 @@ h6 {
   .mobile-nav-toggle {
     display: block;
   }
-
+  .mobile-nav-toggle {
+    color: #000;
+  }
   .navbar ul {
     display: none;
   }
